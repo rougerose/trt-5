@@ -1,0 +1,18 @@
+/* body { font-family: arial, verdana, sans-serif; font-size: 14px; line-height: 17px; background-color: #999999; }*/
+/*table { border: 0; }*/
+/*td { font-family: arial, verdana, sans-serif; font-size: 14px; line-height: 17px; }*/
+/* table.question { border:1px solid gray;}*/
+table.question table.question {border:none;}
+td.tenpoint { font-size: 12px; line-height: 15px; }
+img { border: 0; }
+.b3 { background-color: #333333; }
+.b9 { background-color: #999999; }
+.ba { background-color: #aaaaaa; }
+.bd { background-color: #dddddd; }
+.be { background-color: #eeeeee; }
+.bf { font-family:Helvetica, "Lucida Grande", Arial, sans-serif; background-color: #ffffff; border:1px solid gray;}
+.array1 { background-color: #eeeeee; }
+.array2 { background-color: #ffffff; }
+.errormandatory { font-size: 13px; font-weight: bold; color:#ff0000; }
+label.answertext {margin-left:10px;}
+
