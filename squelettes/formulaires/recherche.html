@@ -1,7 +1,8 @@
-<form action="[(#ENV{lien})]" method="get" id="form-recherche">
-  [(#ENV{lien}|form_hidden)]
-  [<input type="hidden" name="lang" value="(#ENV{lang})" />]
-  <h3><label for="recherche"><:recherche:></label></h3>
-  <input name="recherche" type="text" id="recherche" value="[(#ENV{recherche}|sinon{<:info_rechercher:>" onfocus="this.value='';})]" size="15">
-  <input name="go" type="submit" value="ok" class="spip_bouton">
-</form>
+<div class="formulaire_spip formulaire_recherche" id="formulaire_recherche">
+<form action="[(#ENV{action})]" method="get" id="form-recherche"><div>
+	[(#ENV{action}|form_hidden)]
+	[<input type="hidden" name="lang" value="(#ENV{lang})" />]
+	<label for="recherche" style="display:none;"><:info_rechercher_02:></label>
+	<input type="text" class="text" size="10" name="recherche" id="recherche"[ value="(#ENV{recherche})"] accesskey="4" /><input type="submit" class="submit spip_bouton" value="ok" title="<:info_rechercher:>" />
+</div></form>
+</div>
