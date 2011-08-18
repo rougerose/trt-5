@@ -1,1 +1,165 @@
-#CACHE{86400}<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd"><BOUCLE_principale(BREVES){id_breve}><html lang="#LANG"><head><meta http-equiv="Content-Type" content="text/html; charset=#CHARSET"><title>[(#TITRE|supprimer_numero|textebrut) | ]#NOM_SITE_SPIP</title>[<meta name="description" content="(#DESCRIPTIF|textebrut)">]<INCLURE{fond=inc-head}></head><B_page_infos_utiles><BOUCLE_page_infos_utiles(RUBRIQUES){id_rubrique}{id_rubrique IN 5}><body class="rubrique"></BOUCLE_page_infos_utiles></B_page_infos_utiles><body class="article"><//B_page_infos_utiles><div id="conteneur">  <div id="entete"> <a href="/" title="Retour &agrave; la page d'accueil" class="nohover">[<img src="(#CHEMIN{images/TRT-5.png})" width="750" height="115" alt="TRT-5, groupe interassociatif traitements &amp; recherche thérapeutique" id="logo">]</a>  </div>  <div id="navigation">    <ul>      <li class="rubrique_off"><a href="/">Accueil</a></li>      <BOUCLE_secteurs(RUBRIQUES){racine}{par num titre}{doublons}>      <li class="rubrique_[(#EXPOSE|{'on','off'})]"><a href="#URL_RUBRIQUE">[(#TITRE|supprimer_numero|titremenu)]</a></li>      </BOUCLE_secteurs>    </ul>  </div>  <div id="navigation_rubrique">    <h1><BOUCLE_hierarchie(HIERARCHIE){id_rubrique}{" > "}>[<a href="#URL_RUBRIQUE">(#TITRE|supprimer_numero)</a>]</BOUCLE_hierarchie>[ > (#TITRE|supprimer_numero)]</h1>	<BOUCLE_filles(RUBRIQUES){id_parent}{doublons filles}> </BOUCLE_filles>	</B_filles>	<div class="rubrique_vide">&nbsp;</div>	<//B_filles>    <BOUCLE_hierarchie_courante(HIERARCHIE){id_rubrique}{tout}><BOUCLE_parents(RUBRIQUES){meme_parent} {doublons parents} > </BOUCLE_parents></BOUCLE_hierarchie_courante>    <BOUCLE_tout(RUBRIQUES){tout}{doublons parents}{doublons filles}{doublons exclusion}> </BOUCLE_tout>    <BOUCLE_secteur(RUBRIQUES){id_parent=0}{id_secteur}>	<B_rubriques_niv2>	<ul class="nr_niv2">      <BOUCLE_rubriques_niv2(RUBRIQUES){id_parent}{doublons exclusion}{par num titre}>      <li class="rubrique_[(#EXPOSE|{'on','off'})]"><a href="#URL_RUBRIQUE">[(#TITRE|supprimer_numero)]</a>        <B_rubriques_niv3>        <ul class="nr_niv3">          <BOUCLE_rubriques_niv3(boucle_rubriques_niv2)></BOUCLE_rubriques_niv3>          <div class="vide">&nbsp;</div>        </ul>        </B_rubriques_niv3>      </li>      </BOUCLE_rubriques_niv2>      <div class="vide">&nbsp;</div>    </ul></B_rubriques_niv2></BOUCLE_secteur>  </div>  <!-- debut contenu -->  <div id="contenu">    <!-- debut premiere partie -->    <div id="contenu_partie1">      <div id="colonne_principale1">        <div id="cp1">		  <B_breve_rubrique5>		  <BOUCLE_breve_rubrique5(RUBRIQUES){id_rubrique}{id_rubrique IN 5}>		  <h2>[(#TITRE|supprimer_numero)]</h2>          <div id="chapo">		   [(#TEXTE)]		  </div>		  </BOUCLE_breve_rubrique5>          <div class="corps_texte">		   <form action="rubrique5.html?id_mot=" method="get" class="tri">              <h3 class="tri"><label for="select-tri">Afficher :</label></h3>              <select name="id_mot" id="select-tri">                <option value="">Toutes les infos utiles</option>                <BOUCLE_mots_categories(MOTS){id_groupe=3}>                <option value="[(#ID_MOT)]"<?php if (#ID_MOT == <BOUCLE_mot_breve(MOTS){id_breve}>#ID_MOT</BOUCLE_mot_breve>) echo "selected"; ?>>[(#TITRE|supprimer_numero)]</option>                </BOUCLE_mots_categories>              </select>              <input name="" type="submit" value="soumettre" class="spip_bouton">            </form>		   <BOUCLE_categories(MOTS){id_breve}{id_groupe=3}>		   <h3 class="categorie"><a href="rubrique5.html?id_mot=#ID_MOT">[(#TITRE|supprimer_numero)]</a></h3> 		   [<p class="descriptif-infos">(#DESCRIPTIF)</p>]		   </BOUCLE_categories>			<dl class="syndication">			<BOUCLE_breve(BREVES){id_breve}>			<dt class="references"><a href="[(#URL_SITE|sinon{"#"})]">[(#TITRE|supprimer_numero)]</a></dt>			<dd class="references">[<span class="spip_logos"><a href="[(#URL_SITE|sinon{"#"})]" class="nohover">(#LOGO_BREVE||reduire_image{100,0}|inserer_attribut{alt,[(#TITRE|supprimer_numero)]})</a></span>]			<div>			[(#TEXTE)]			[<p><a href="#URL_SITE" title="Consulter le site"><strong>(#URL_SITE)</strong></a></p>]			</div></dd>			</BOUCLE_breve>			<dd class="fin-references">&nbsp;</dd>			<BOUCLE_categories2(MOTS){id_breve}{id_groupe=3}>			<dd class="references"><span class="poursuivre"><a href="rubrique5.html?id_mot=#ID_MOT">consulter les [(#TITRE|supprimer_numero)]</a></span></dd>			</BOUCLE_categories2>			</dl>          </div>		  </B_breve_rubrique5>		  [<h2>(#TITRE|supprimer_numero)</h2>]		    [<h3 class="date">(#DATE|affdate)</h3>]          <div class="corps_texte breve">		   [(#LOGO_BREVE||reduire_image{200}|nostyle|inserer_attribut{alt,[(#TITRE|supprimer_numero)]})][(#TEXTE|nostyle)]		   </div>		    [<div class="corps_texte_autres">			 <a href="#URL_SITE">(#NOM_SITE)</a>			 </div>]			  [<div class="corps_texte_autres">            <h4>Notes</h4>            (#NOTES)			</div>]		  <//B_breve_rubrique5>        </div>      </div>      <!-- fin colonne principale 1 -->      <div id="colonne_secondaire1"><hr class="invisible">        <div id="cs1">          #FORMULAIRE_RECHERCHE		  <B_annonce>		  <div id="journee" class="entree">		  <h3>Prochaine journ&eacute;e annuelle du TRT5</h3>		  <dl>		  <BOUCLE_annonce(ARTICLES){id_rubrique}{titre_mot=annonce}{age<=0}{exclus}>		  [<dt><a href="#URL_ARTICLE">(#TITRE|supprimer_numero)</a></dt>]		  <dd><span class="poursuivre"><a href="#URL_ARTICLE">en savoir plus</a></span></dd>		  </BOUCLE_annonce>		  <BOUCLE_programme(ARTICLES){id_rubrique}{titre_mot=programme}{age<=0}{exclus}>		  <dt><a href="#URL_ARTICLE">Programme de la journ&eacute;e</a></dt>		  </BOUCLE_programme><BOUCLE_comite(ARTICLES){id_rubrique}{titre_mot=comité scientifique}{age<=0}{exclus}>		  <dt><a href="#URL_ARTICLE">Comit&eacute; scientifique</a></dt>		  </BOUCLE_comite><BOUCLE_inscription(ARTICLES){id_rubrique}{titre_mot=inscription}{age<=0}{exclus}>		  <dt class="inscription"><a href="#URL_ARTICLE">S'inscrire</a></dt>		  </BOUCLE_inscription>		  </dl>		  </div>		  </B_annonce>		  <BOUCLE_exclusion_mots_infos_utiles(MOTS){id_groupe=3}{doublons}> </BOUCLE_exclusion_mots_infos_utiles>		  <B_motscles>          <div class="entree">            <h3>Sur le m&ecirc;me th&egrave;me</h3>            <BOUCLE_motscles(MOTS){id_breve}{par titre}{doublons}>            <dl>              <dt><a href="#URL_MOT">[(#TITRE|supprimer_numero)]</a></dt>              <BOUCLE_articles_mots(ARTICLES){id_mot}{par date}{inverse}{0,1}{doublons}{exclus}>              <dd class="articles_theme"><a href="#URL_ARTICLE">[(#TITRE|supprimer_numero)]</a></dd>              </BOUCLE_articles_mots>            </dl>            <BOUCLE_articles_mots_plus(ARTICLES){id_mot}{par date}{inverse}{doublons}{1,1}>            </BOUCLE_articles_mots_plus>            <p class="info_plus"><a href="#URL_MOT">tous les articles</a></p>            </B_articles_mots_plus>            </BOUCLE_motscles>          </div>          </B_motscles>        </div>      </div>    </div>    <!-- fin premiere partie -->  </div>  <!-- fin contenu -->  <hr class="invisible">  <!-- pied de page -->  <INCLURE{fond=pied-de-page}></div><!-- fin conteneur --></body></BOUCLE_principale></html>
+#CACHE{86400}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<BOUCLE_principale(BREVES){id_breve}><html lang="#LANG">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=#CHARSET">
+<title>[(#TITRE|supprimer_numero|textebrut) | ]#NOM_SITE_SPIP</title>
+[<meta name="description" content="(#DESCRIPTIF|textebrut)">]
+<INCLURE{fond=inc-head}>
+</head>
+<B_page_infos_utiles>
+<BOUCLE_page_infos_utiles(RUBRIQUES){id_rubrique}{id_rubrique IN 5}>
+<body class="rubrique">
+</BOUCLE_page_infos_utiles>
+</B_page_infos_utiles>
+<body class="article">
+<//B_page_infos_utiles>
+<div id="conteneur">
+  <div id="entete"> <a href="/" title="Retour &agrave; la page d'accueil" class="nohover">[<img src="(#CHEMIN{images/TRT-5.png})" width="750" height="115" alt="TRT-5, groupe interassociatif traitements &amp; recherche thÃ©rapeutique" id="logo">]</a>
+  </div>
+  <div id="navigation">
+    <ul>
+      <li class="rubrique_off"><a href="/">Accueil</a></li>
+      <BOUCLE_secteurs(RUBRIQUES){racine}{par num titre}{doublons}>
+      <li class="rubrique_[(#EXPOSE|{'on','off'})]"><a href="#URL_RUBRIQUE">[(#TITRE|supprimer_numero|titremenu)]</a></li>
+      </BOUCLE_secteurs>
+    </ul>
+  </div>
+  <div id="navigation_rubrique">
+    <h1><BOUCLE_hierarchie(HIERARCHIE){id_rubrique}{" > "}>[<a href="#URL_RUBRIQUE">(#TITRE|supprimer_numero)</a>]</BOUCLE_hierarchie>[ > (#TITRE|supprimer_numero)]</h1>
+	<BOUCLE_filles(RUBRIQUES){id_parent}{doublons filles}> </BOUCLE_filles>
+	</B_filles>
+	<div class="rubrique_vide">&nbsp;</div>
+	<//B_filles>
+    <BOUCLE_hierarchie_courante(HIERARCHIE){id_rubrique}{tout}><BOUCLE_parents(RUBRIQUES){meme_parent} {doublons parents} > </BOUCLE_parents></BOUCLE_hierarchie_courante>
+    <BOUCLE_tout(RUBRIQUES){tout}{doublons parents}{doublons filles}{doublons exclusion}> </BOUCLE_tout>
+    <BOUCLE_secteur(RUBRIQUES){id_parent=0}{id_secteur}>
+	<B_rubriques_niv2>
+	<ul class="nr_niv2">
+      <BOUCLE_rubriques_niv2(RUBRIQUES){id_parent}{doublons exclusion}{par num titre}>
+      <li class="rubrique_[(#EXPOSE|{'on','off'})]"><a href="#URL_RUBRIQUE">[(#TITRE|supprimer_numero)]</a>
+        <B_rubriques_niv3>
+        <ul class="nr_niv3">
+          <BOUCLE_rubriques_niv3(boucle_rubriques_niv2)></BOUCLE_rubriques_niv3>
+          <div class="vide">&nbsp;</div>
+        </ul>
+        </B_rubriques_niv3>
+      </li>
+      </BOUCLE_rubriques_niv2>
+      <div class="vide">&nbsp;</div>
+    </ul></B_rubriques_niv2></BOUCLE_secteur>
+  </div>
+  <!-- debut contenu -->
+  <div id="contenu">
+    <!-- debut premiere partie -->
+    <div id="contenu_partie1">
+      <div id="colonne_principale1">
+        <div id="cp1">
+		  <B_breve_rubrique5>
+		  <BOUCLE_breve_rubrique5(RUBRIQUES){id_rubrique}{id_rubrique IN 5}>
+		  <h2>[(#TITRE|supprimer_numero)]</h2>
+          <div id="chapo">
+		   [(#TEXTE)]
+		  </div>
+		  </BOUCLE_breve_rubrique5>
+          <div class="corps_texte">
+		   <form action="rubrique5.html?id_mot=" method="get" class="tri">
+              <h3 class="tri"><label for="select-tri">Afficher :</label></h3>
+              <select name="id_mot" id="select-tri">
+                <option value="">Toutes les infos utiles</option>
+                <BOUCLE_mots_categories(MOTS){id_groupe=3}>
+                <option value="[(#ID_MOT)]"<?php if (#ID_MOT == <BOUCLE_mot_breve(MOTS){id_breve}>#ID_MOT</BOUCLE_mot_breve>) echo "selected"; ?>>[(#TITRE|supprimer_numero)]</option>
+                </BOUCLE_mots_categories>
+              </select>
+              <input name="" type="submit" value="soumettre" class="spip_bouton">
+            </form>
+		   <BOUCLE_categories(MOTS){id_breve}{id_groupe=3}>
+		   <h3 class="categorie"><a href="rubrique5.html?id_mot=#ID_MOT">[(#TITRE|supprimer_numero)]</a></h3> 
+		   [<p class="descriptif-infos">(#DESCRIPTIF)</p>]
+		   </BOUCLE_categories>
+			<dl class="syndication">
+			<BOUCLE_breve(BREVES){id_breve}>
+			<dt class="references"><a href="[(#URL_SITE|sinon{"#"})]">[(#TITRE|supprimer_numero)]</a></dt>
+			<dd class="references">[<span class="spip_logos"><a href="[(#URL_SITE|sinon{"#"})]" class="nohover">(#LOGO_BREVE||image_reduire{100,0}|inserer_attribut{alt,[(#TITRE|supprimer_numero)]})</a></span>]
+			<div>
+			[(#TEXTE)]
+			[<p><a href="#URL_SITE" title="Consulter le site"><strong>(#URL_SITE)</strong></a></p>]
+			</div></dd>
+			</BOUCLE_breve>
+			<dd class="fin-references">&nbsp;</dd>
+			<BOUCLE_categories2(MOTS){id_breve}{id_groupe=3}>
+			<dd class="references"><span class="poursuivre"><a href="rubrique5.html?id_mot=#ID_MOT">consulter les [(#TITRE|supprimer_numero)]</a></span></dd>
+			</BOUCLE_categories2>
+			</dl>
+          </div>
+		  </B_breve_rubrique5>
+		  [<h2>(#TITRE|supprimer_numero)</h2>]
+		    [<h3 class="date">(#DATE|affdate)</h3>]
+          <div class="corps_texte breve">
+		   [(#LOGO_BREVE||image_reduire{200}|nostyle|inserer_attribut{alt,[(#TITRE|supprimer_numero)]})][(#TEXTE|nostyle)]
+		   </div>
+		    [<div class="corps_texte_autres">
+			 <a href="#URL_SITE">(#NOM_SITE)</a>
+			 </div>]
+			  [<div class="corps_texte_autres">
+            <h4>Notes</h4>
+            (#NOTES)
+			</div>]
+		  <//B_breve_rubrique5>
+        </div>
+      </div>
+      <!-- fin colonne principale 1 -->
+      <div id="colonne_secondaire1"><hr class="invisible">
+        <div id="cs1">
+          #FORMULAIRE_RECHERCHE
+		  <B_annonce>
+		  <div id="journee" class="entree">
+		  <h3>Prochaine journ&eacute;e annuelle du TRT5</h3>
+		  <dl>
+		  <BOUCLE_annonce(ARTICLES){id_rubrique}{titre_mot=annonce}{age<=0}{exclus}>
+		  [<dt><a href="#URL_ARTICLE">(#TITRE|supprimer_numero)</a></dt>]
+		  <dd><span class="poursuivre"><a href="#URL_ARTICLE">en savoir plus</a></span></dd>
+		  </BOUCLE_annonce>
+		  <BOUCLE_programme(ARTICLES){id_rubrique}{titre_mot=programme}{age<=0}{exclus}>
+		  <dt><a href="#URL_ARTICLE">Programme de la journ&eacute;e</a></dt>
+		  </BOUCLE_programme><BOUCLE_comite(ARTICLES){id_rubrique}{titre_mot=comitÃ© scientifique}{age<=0}{exclus}>
+		  <dt><a href="#URL_ARTICLE">Comit&eacute; scientifique</a></dt>
+		  </BOUCLE_comite><BOUCLE_inscription(ARTICLES){id_rubrique}{titre_mot=inscription}{age<=0}{exclus}>
+		  <dt class="inscription"><a href="#URL_ARTICLE">S'inscrire</a></dt>
+		  </BOUCLE_inscription>
+		  </dl>
+		  </div>
+		  </B_annonce>
+		  <BOUCLE_exclusion_mots_infos_utiles(MOTS){id_groupe=3}{doublons}> </BOUCLE_exclusion_mots_infos_utiles>
+		  <B_motscles>
+          <div class="entree">
+            <h3>Sur le m&ecirc;me th&egrave;me</h3>
+            <BOUCLE_motscles(MOTS){id_breve}{par titre}{doublons}>
+            <dl>
+              <dt><a href="#URL_MOT">[(#TITRE|supprimer_numero)]</a></dt>
+              <BOUCLE_articles_mots(ARTICLES){id_mot}{par date}{inverse}{0,1}{doublons}{exclus}>
+              <dd class="articles_theme"><a href="#URL_ARTICLE">[(#TITRE|supprimer_numero)]</a></dd>
+              </BOUCLE_articles_mots>
+            </dl>
+            <BOUCLE_articles_mots_plus(ARTICLES){id_mot}{par date}{inverse}{doublons}{1,1}>
+            </BOUCLE_articles_mots_plus>
+            <p class="info_plus"><a href="#URL_MOT">tous les articles</a></p>
+            </B_articles_mots_plus>
+            </BOUCLE_motscles>
+          </div>
+          </B_motscles>
+        </div>
+      </div>
+    </div>
+    <!-- fin premiere partie -->
+  </div>
+  <!-- fin contenu -->
+  <hr class="invisible">
+  <!-- pied de page -->
+  <INCLURE{fond=pied-de-page}>
+</div>
+<!-- fin conteneur -->
+</body>
+</BOUCLE_principale>
+</html>
