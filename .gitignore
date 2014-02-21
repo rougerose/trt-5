@@ -2,9 +2,4 @@
 .DS_Store
 
 # projet spip : tous les fichiers et dossiers sont ignores
-/*
-
-# excepte
-!.gitignore
-!/squelettes
-!README
+bower_components/

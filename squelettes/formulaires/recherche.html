@@ -1,7 +1,0 @@
-<form action="[(#ENV{lien})]" method="get" id="form-recherche">
-  [(#ENV{lien}|form_hidden)]
-  [<input type="hidden" name="lang" value="(#ENV{lang})" />]
-  <h3><label for="recherche"><:recherche:></label></h3>
-  <input name="recherche" type="text" id="recherche" value="[(#ENV{recherche}|sinon{<:info_rechercher:>" onfocus="this.value='';})]" size="15">
-  <input name="go" type="submit" value="ok" class="spip_bouton">
-</form>
