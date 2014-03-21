@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+// bourbon
+@import "bourbon";
+
+// normalize
+@import "../bower_components/foundation/scss/normalize.scss";
+// foundation
+@import "../bower_components/foundation/scss/foundation.scss";
+
+// font-awesome
+$fa-font-path:        "fonts/fontawesome";
+@import "../bower_components/fontawesome/scss/font-awesome";
+
+
+
+/*==================================
+=            #CSS TRT-5            =
+==================================*/
+
+@import
+// settings
+    "ui/settings.colors", 
+
+// base
+    "ui/fonts",
+
+// layout
+    "ui/layout",
+    "ui/page",
+
+// nav
+    "ui/nav",
+
+// divers
+    "ui/spip-admin";

@@ -1,0 +1,19 @@
+/*===========================
+=            nav            =
+===========================*/
+
+/* .site-nav-open */
+.site-nav-open {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 1;
+    @include transition(opacity .5s ease-in 0);
+    &:hover {
+        opacity: .3;
+    }
+}
+.site-nav-close {}
+
+/*-----  End of nav  ------*/
+

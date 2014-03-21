@@ -1,0 +1,11 @@
+<paquet categorie="squelette" compatibilite="[3.0.14;[" etat="dev" logo="img/trt5-128.png" prefix="trt5" version="2.0.0">
+    <nom>TRT-5</nom>
+    <auteur lien="http://rouge-rose.net">christophe le drean</auteur>
+    <licence>MIT</licence>
+    <necessite nom="Zcore" compatibilite="[2.4.0;[" />
+    <!-- <necessite compatibilite="[2.0.1;[" nom="Z5"/> -->
+    <!-- <necessite nom="IntertitresTdm" compatibilite="[0.9.5;[" /> -->
+    <!-- <necessite nom="jqueryui" compatibilite="[1.8.21;[" /> -->
+    <!-- <utilise nom="medias" compatibilite="[2.7.45;[" /> -->
+    <chemin path=""/>
+</paquet>

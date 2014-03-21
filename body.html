@@ -1,0 +1,25 @@
+<body>
+    <div class="off-canvas-wrap">
+      <div class="inner-wrap">
+        <nav class="right-off-canvas-menu">
+            <INCLURE{fond=inclure/nav,env} />
+        </nav>
+        <div class="row">
+            <div class="column">
+                <header class="header" role="banner">
+                    <INCLURE{fond=header/#ENV{type-page},env} />
+                </header><!-- /.header -->
+                <div class="main" role="main">
+                    <INCLURE{fond=content/#ENV{type-page},env} />
+                </div><!-- /.main -->
+                <footer class="footer">
+                    <INCLURE{fond=footer/#ENV{type-page},env} />
+                </footer><!-- /.footer -->
+            </div><!-- /.column -->
+        </div><!-- /.row -->
+        <a class="exit-off-canvas"></a>
+      </div>
+    </div>
+    [<script src="(#CHEMIN{js/public-body-min.js})"></script>]
+    <script>$(document).foundation();</script>
+</body>
