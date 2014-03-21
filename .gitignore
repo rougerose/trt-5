@@ -4,4 +4,5 @@
 # projet spip : tous les fichiers et dossiers sont ignores
 bower_components/
 *.codekit
-.sass-cache/
+.sass-cache
+.codekit-cache

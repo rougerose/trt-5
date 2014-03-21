@@ -7945,32 +7945,6 @@ th.hide-for-touch {
   font-style: normal; }
 
 /*-----  End of #FONTS  ------*/
-/*============================
-=            layout            =
-============================*/
-body, html {
-  height: 100%;
-  width: 100%; }
-
-.container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  max-width: 62.5rem;
-  *zoom: 1;
-  padding-top: 2em; }
-  .container:before, .container:after {
-    content: " ";
-    display: table; }
-  .container:after {
-    clear: both; }
-
-.off-canvas-wrap, .inner-wrap {
-  height: 100%; }
-
-/*-----  End of layout  ------*/
 /*=============================
 =            #PAGE            =
 =============================*/
@@ -7983,7 +7957,13 @@ body {
   height: 100%;
   width: 100%; }
 
-/*==========  #HEADER  ==========*/
+.off-canvas-wrap, .inner-wrap {
+  height: 100%; }
+
+/*-----  End of #PAGE  ------*/
+/*===============================
+=            #HEADER            =
+===============================*/
 .header {
   position: relative;
   margin-top: 2em;
@@ -7998,6 +7978,9 @@ body {
   margin-right: 0.9375rem; }
 
 .slogan {
+  display: inline-block;
+  vertical-align: bottom;
+  overflow: hidden;
   margin-top: 1em;
   font-family: 'dinmed';
   text-transform: uppercase;
@@ -8009,12 +7992,7 @@ body {
   .slogan .slogan-item3 {
     color: #adafaf; }
 
-@media only screen and (min-width: 40.063em) {
-  .slogan {
-    display: inline-block;
-    vertical-align: bottom;
-    overflow: hidden; } }
-/*-----  End of #PAGE  ------*/
+/*-----  End of #HEADER  ------*/
 /*===========================
 =            nav            =
 ===========================*/

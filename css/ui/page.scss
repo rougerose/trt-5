@@ -10,39 +10,10 @@ body {
     width: 100%;
 }
 
-/*==========  #HEADER  ==========*/
-.header {
-    position: relative;
-    margin-top: 2em;
-    padding-bottom: 1em;
-    border-bottom: 2px solid $color-r;
-}
-.site-logo {
-    img {
-        display: inline-block;
-        width: 200px;
-        height: 100px;
-        background-color: $color-r;
-        margin-right: $column-gutter / 2;
-    }
-}
-.slogan {
-    margin-top: 1em;
-    font-family: 'dinmed';
-    text-transform: uppercase;
-    color: $color-b;
-    .slogan-item1 {display: block;}
-    .slogan-item2 {color: $color-r;}
-    .slogan-item3 {color: $color-g;}
+.off-canvas-wrap,.inner-wrap{
+    height:100%;   
 }
 
-@media #{$medium-up} {
-    .slogan {
-        display: inline-block;
-        vertical-align: bottom;
-        overflow: hidden;
-    }
-}
 
 
 /*-----  End of #PAGE  ------*/
