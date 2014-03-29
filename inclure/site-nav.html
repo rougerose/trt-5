@@ -1,4 +1,19 @@
-[(#PLUGIN{menus}|?{
-    #INCLURE{fond=inclure/menu, env, identifiant=barrenav},
-    #INCLURE{fond=inclure/nav-secteurs,env}
-})]
+<ul class="site-nav">
+   <li class="site-nav__item[ (#ENV{type-page}|=={sommaire}|oui)site-nav__item--is-active] level--top">
+      <a href="#URL_SITE_SPIP" class="item"><:local:home:></a>
+   </li>
+   <BOUCLE_secteurs(RUBRIQUES){racine}{par num titre, titre}>
+   <li class="site-nav__item[ (#EXPOSE|oui)site-nav__item--is-active] level--top">
+      <a class="item" href="#URL_RUBRIQUE">#TITRE</a>
+      <B_sousrubriques>
+         <ul>
+            <BOUCLE_sousrubriques(RUBRIQUES){id_parent}{par num titre, titre}>
+            <li class="site-nav__item[ (#EXPOSE|oui)site-nav__item--is-active] level--bottom">
+               <a href="#URL_RUBRIQUE">#TITRE</a>
+            </li>
+            </BOUCLE_sousrubriques>
+         </ul>
+         </B_sousrubriques>
+   </li>
+   </BOUCLE_secteurs>
+</ul>

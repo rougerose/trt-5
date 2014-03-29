@@ -1,33 +1,31 @@
 @charset "UTF-8";
 
-// bourbon
-//@import "bourbon";
-
-// normalize
-//@import "../bower_components/foundation/scss/normalize.scss";
-// foundation
-//@import "../bower_components/foundation/scss/foundation.scss";
-
-// font-awesome
-//$fa-font-path:        "fonts/fontawesome";
-//@import "../bower_components/fontawesome/scss/font-awesome";
-
+//
+// lib
+// ========================================================================== 
+@import "bourbon";
 @import "normalize";
-@import "foundation"; //
+@import "foundation";
 
-/*==================================
-=            #CSS TRT-5            =
-==================================*/
+$fa-font-path: "fonts/fontawesome";
+@import "font-awesome";
 
-//@import
-// settings    "ui/settings.colors", 
+//
+// TRT-5
+// ===================
 
-// base    "ui/fonts",
 
-// layout    "ui/page",
+@import 
+    "scss/settings",
 
-// structure   "ui/header",
+    // partiel: base
+    "scss/base/fonts",
+    "scss/base/page",
+    "scss/base/typo",
 
-// nav   "ui/nav",
+    // partiel: layout
+    "scss/layout/header",
+    "scss/layout/nav",
 
-// divers    "ui/spip-admin";
+    // partiel: spip
+    "scss/spip/admin";

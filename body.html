@@ -1,8 +1,8 @@
 <body>
     <div class="off-canvas-wrap">
       <div class="inner-wrap">
-        <nav class="right-off-canvas-menu">
-            <INCLURE{fond=inclure/nav,env} />
+        <nav class="site-nav-container right-off-canvas-menu">
+            <INCLURE{fond=inclure/site-nav,env} />
         </nav>
         <div class="row">
             <div class="column">
@@ -20,6 +20,6 @@
         <a class="exit-off-canvas"></a>
       </div>
     </div>
-    [<script src="(#CHEMIN{js/public-body-min.js})"></script>]
+    [<script src="(#CHEMIN{js/public-body.js})"></script>]
     <script>$(document).foundation();</script>
 </body>

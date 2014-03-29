@@ -1,0 +1,31 @@
+/* ==========================================================================
+   #HEADER
+   ========================================================================== */
+.header {
+    position: relative;
+    margin-top: 2em;
+    padding-bottom: 1em;
+    border-bottom: 2px solid $color-1;
+}
+    .site-logo {
+        img {
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            background-color: $color-1;
+            margin-right: $column-gutter / 2;
+        }
+    }
+    .slogan {
+        display: inline-block;
+        vertical-align: bottom;
+        overflow: hidden;
+        margin-top: 1em;
+        font-family: 'dinmed';
+        text-transform: uppercase;
+        color: $black;
+        .slogan-item1 {display: block;}
+        .slogan-item2 {color: $color-1;}
+        .slogan-item3 {color: $color-2;}
+    }
+
