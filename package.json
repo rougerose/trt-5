@@ -1,0 +1,25 @@
+{
+  "name": "trt-5",
+  "version": "0.0.1",
+  "description": "TRT-5.org, plugin spip",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rougerose/trt-5.git"
+  },
+  "author": "christophe le drean",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rougerose/trt-5/issues"
+  },
+  "homepage": "https://github.com/rougerose/trt-5",
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-concat": "^0.3.0",
+    "grunt-sass": "^0.12.0"
+  }
+}

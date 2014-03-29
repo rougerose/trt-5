@@ -1,38 +1,33 @@
 @charset "UTF-8";
 
 // bourbon
-@import "bourbon";
+//@import "bourbon";
 
 // normalize
-@import "../bower_components/foundation/scss/normalize.scss";
+//@import "../bower_components/foundation/scss/normalize.scss";
 // foundation
-@import "../bower_components/foundation/scss/foundation.scss";
+//@import "../bower_components/foundation/scss/foundation.scss";
 
 // font-awesome
-$fa-font-path:        "fonts/fontawesome";
-@import "../bower_components/fontawesome/scss/font-awesome";
+//$fa-font-path:        "fonts/fontawesome";
+//@import "../bower_components/fontawesome/scss/font-awesome";
 
-
+@import "normalize";
+@import "foundation"; //
 
 /*==================================
 =            #CSS TRT-5            =
 ==================================*/
 
-@import
-// settings
-    "ui/settings.colors", 
+//@import
+// settings    "ui/settings.colors", 
 
-// base
-    "ui/fonts",
+// base    "ui/fonts",
 
-// layout
-    "ui/page",
+// layout    "ui/page",
 
-// structure
-    "ui/header",
+// structure   "ui/header",
 
-// nav
-    "ui/nav",
+// nav   "ui/nav",
 
-// divers
-    "ui/spip-admin";
+// divers    "ui/spip-admin";

@@ -1,7 +1,8 @@
-/*=======================================
-=            off-canvas-menu            =
-=======================================*/
-.off-canvas-wrap, .inner-wrap {
+/*========================================
+=            #OFF-CANVAS-MENU            =
+========================================*/
+.off-canvas-wrap,
+.inner-wrap {
   height: 100%; }
 
-/*-----  End of off-canvas-menu  ------*/
+/*-----  End of #OFF-CANVAS-MENU  ------*/

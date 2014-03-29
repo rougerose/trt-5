@@ -2,7 +2,5 @@
 .DS_Store
 
 # projet spip : tous les fichiers et dossiers sont ignores
-bower_components/
-*.codekit
-.sass-cache
-.codekit-cache
+/bower_components
+/node_modules
