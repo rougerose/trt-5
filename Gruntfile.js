@@ -4,7 +4,8 @@ module.exports = function(grunt) {
 
     sass: {
       options: {
-        includePaths: ['bower_components/foundation/scss']
+        //includePaths: 
+        includePaths: [require('node-bourbon').includePaths,'bower_components/foundation/scss','bower_components/fontawesome/scss']
       },
       dist: {
         options: {
@@ -37,7 +38,7 @@ module.exports = function(grunt) {
     watch: {
       grunt: { files: ['Gruntfile.js'] },
       sass: {
-        files: 'css/**/*.scss',
+        files: 'css/**/*',
         tasks: ['sass']
       }
     }
@@ -47,7 +48,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('dist', ['sass:dist','concat:dev']);
+  // grunt.registerTask('dist', ['sass:dist','concat:dev']);
   grunt.registerTask('dev', ['sass:dev','concat:dev']);
   grunt.registerTask('default', ['dev','watch']);
 }

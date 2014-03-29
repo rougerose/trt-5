@@ -12,6 +12,7 @@
   },
   "author": "christophe le drean",
   "license": "MIT",
+  "private": true,
   "bugs": {
     "url": "https://github.com/rougerose/trt-5/issues"
   },
@@ -20,6 +21,7 @@
     "grunt": "^0.4.4",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-contrib-concat": "^0.3.0",
-    "grunt-sass": "^0.12.0"
+    "grunt-sass": "^0.12.0",
+    "node-bourbon": "^1.0.0"
   }
 }
