@@ -3,8 +3,7 @@
     <auteur lien="http://rouge-rose.net">christophe le drean</auteur>
     <licence>MIT</licence>
     <necessite nom="Zcore" compatibilite="[2.4.0;[" />
-    <necessite nom="menus" compatibilite="[1.4.6;[" />
-    <!-- <necessite compatibilite="[2.0.1;[" nom="Z5"/> -->
+    <necessite compatibilite="[1.0.4;[" nom="socialtags"/>
     <!-- <necessite nom="IntertitresTdm" compatibilite="[0.9.5;[" /> -->
     <!-- <necessite nom="jqueryui" compatibilite="[1.8.21;[" /> -->
     <!-- <utilise nom="medias" compatibilite="[2.7.45;[" /> -->
