@@ -38,8 +38,8 @@ module.exports = function(grunt) {
     watch: {
       grunt: { files: ['Gruntfile.js'] },
       sass: {
-        files: 'css/**/*',
-        tasks: ['sass']
+        files: 'css/**/*.scss',
+        tasks: ['dev']
       }
     }
   });
