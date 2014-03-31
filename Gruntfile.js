@@ -4,12 +4,11 @@ module.exports = function(grunt) {
 
     sass: {
       options: {
-        //includePaths: 
-        includePaths: [require('node-bourbon').includePaths,'bower_components/foundation/scss','bower_components/fontawesome/scss']
+        loadPath: [require('node-bourbon').includePaths,'bower_components/foundation/scss','bower_components/fontawesome/scss']
       },
       dist: {
         options: {
-          outputStyle: 'compressed'
+          style: 'compressed'
         },
         files: {
           'css/styles.css': 'css/styles.scss'
@@ -17,7 +16,8 @@ module.exports = function(grunt) {
       },
       dev: {
         options: {
-          outputStyle: 'nested'
+          style: 'nested',
+          quiet: true
         },
         files: {
           'css/styles.css': 'css/styles.scss'
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
