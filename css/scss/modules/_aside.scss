@@ -1,0 +1,21 @@
+/* ==========================================================================
+   #ASIDE
+   ========================================================================== */
+
+.aside {}
+
+.aside__title {
+    font-family: $font-reg;
+    font-size: rem-calc(14);
+    color: $color-2;
+    text-transform: uppercase;
+}
+
+
+@media #{$small-only} {
+    .aside__title {
+        padding-bottom: .5em;
+        border-bottom: 1px dotted $color-2;
+    }
+}
+

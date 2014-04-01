@@ -1,0 +1,46 @@
+<hr id="docs" class="hr-docs" />
+[(#REM) Portfolio : album d'images ]
+<B_documents_portfolio>
+<section class="docs">
+   <h1 class="hN section__titre"><:local:documents_image:></h1>
+   <ul class="medium-block-grid-2">
+      <BOUCLE_documents_portfolio(DOCUMENTS){id_article?}{id_rubrique?}{mode=document}{extension IN png,jpg,gif}{par num titre, date}{vu=non}>
+      <li>
+         <figure class="doc portfolio clearfix">
+            [<a class="mediabox" href="(#URL_DOCUMENT)" type="#MIME_TYPE" rel="documents_portfolio[-a(#ID_ARTICLE)][-r(#ID_RUBRIQUE)]" [ title="(#TITRE|attribut_html|couper{80})"]>
+            [<img src="(#FICHIER|image_reduire{400,0}|extraire_attribut{src})" class="doc__img" alt="[(#TITRE|attribut_html|couper{80})]">]</a>]
+            [<figcaption class="doc__body spip_doc_legende">
+               (#TITRE|ou{#DESCRIPTIF}|ou{#CREDITS}|oui)
+               [<h2 class="#EDIT{titre} hN spip_doc_titre doc__title">(#TITRE)</h2>][
+               (#DESCRIPTIF|ou{#CREDITS}|oui)
+               <p class="spip_doc_descriptif doc__desc">[<span class="#EDIT{descriptif}">(#DESCRIPTIF|PtoBR)</span>][ <span class="#EDIT{credits}">(#CREDITS)</span>]</p>]
+            </figcaption>]
+         </figure>
+      </li>
+      </BOUCLE_documents_portfolio>
+   </ul>
+</section>
+</B_documents_portfolio>
+
+[(#REM) Liste des autres documents joints ]
+<B_documents_joints>
+<section class="docs">
+   <h1 class="hN section__titre"><:local:documents_fichier:></h1>
+   <ul class="medium-block-grid-2">
+      <BOUCLE_documents_joints(DOCUMENTS){id_article?}{id_rubrique?}{extension !IN gif,jpg,png}{vu=non}{par num titre, date}>
+      <li>
+         <figure class="doc fichier clearfix">
+            [(#LOGO_DOCUMENT{vignette}|?{
+               [<a href="#URL_DOCUMENT" class="">(#LOGO_DOCUMENT|image_reduire{150,0}|inserer_attribut{class,doc__img})</a>],
+               [<a href="#URL_DOCUMENT" class="">(#LOGO_DOCUMENT||inserer_attribut{class,doc__img})</a>]
+            })]
+            <figcaption class="doc__body spip_doc_legende">
+               <h2 class="spip_doc_titre doc__title"><a href="#URL_DOCUMENT" title="<:bouton_telecharger:>" type="#MIME_TYPE">[(#TITRE|sinon{<:medias:info_document:>})]</a></h2>
+               <p class="spip_doc_descriptif doc__desc">[(#DESCRIPTIF|PtoBR)<br />]<span class="media-info">#TYPE_DOCUMENT[ &ndash; (#TAILLE|taille_en_octets)]</span></p>
+            </figcaption>
+         </figure>
+      </li>
+      </BOUCLE_documents_joints>
+   </ul>
+</section>
+</B_documents_joints>

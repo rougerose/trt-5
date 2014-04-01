@@ -16,5 +16,8 @@ $color-link-hover: rgba($color-1,0.5);
 
 //
 // #FONT
+$serif: 'PT Serif','Gentium Book Basic', $georgia;
+$sans: 'Source Sans Pro', $helvetica;
+$font-base: $serif;
 $font-reg: "Dinreg", $helvetica;
 $font-bold: "Dinbold", $helvetica;

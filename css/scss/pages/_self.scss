@@ -1,0 +1,70 @@
+/* ==========================================================================
+   #SELF
+   ========================================================================== */
+
+.self__header,
+.self__title,
+.self__meta,
+.self__aside {
+    margin-bottom: 2em;
+}
+.self__aside,
+.self__meta {
+    a {
+        color: $color-2;
+        &:hover {
+            color: $color-1;
+        }
+    }
+}
+
+/* 
+   #SELF__HEADER
+   ========================================================================== */
+
+.self__title {
+    .hN {
+        font-size: rem-calc(28);
+        line-height: 1.1;
+    }
+}
+
+/* 
+   #SELF__BODY
+   ========================================================================== */
+
+.self__body {
+    .chapo {
+        p,
+        li {
+            font-weight: 700;
+        }
+    }
+    section {
+        margin-bottom: 4em;
+    }
+    .ps {
+        padding: 1em 1em .5em;
+        background-color: rgba(#eee,0.5);
+    }
+}
+
+/* 
+   #MEDIA-QUERIES
+   ========================================================================== */
+
+@media #{$medium-up} {
+    .self__title {
+        .hN {
+            font-size: rem-calc(32);
+        }
+    }
+    .self__body {
+        .chapo {
+            p,
+            li {
+                font-size: rem-calc(18);
+            }
+        }
+    }
+}

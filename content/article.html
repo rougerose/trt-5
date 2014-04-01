@@ -1,0 +1,68 @@
+<BOUCLE_content(ARTICLES){id_article}>
+<div class="row">
+    <article class="self self-article clearfix content-principal">
+        <header class="self__header">
+            <div class="self__title medium-8 medium-offset-4 column">
+                [<p class="#EDIT{surtitre} surtitre">(#SURTITRE)</p>]
+                <h1 class="hN">
+                    <span class="#EDIT{titre} titre">#TITRE</span>[ <small class="#EDIT{soustitre} soustitre">(#SOUSTITRE)</small>]
+                </h1>
+            </div>
+            <div class="self__meta medium-4 column left">
+                <ul class="meta">
+                    <li class="meta__item"><time class="updated" datetime="[(#DATE|affdate{Y-m-d})]">[(#DATE|affdate)]</time></li>
+                    [<li class="meta__item"><:local:par:> (#LESAUTEURS)</li>]
+                    <BOUCLE_rubrique(RUBRIQUES){id_rubrique}>
+                    <li class="meta__item breadcrumb__item category"><a href="#URL_RUBRIQUE">#TITRE</a></li>
+                    </BOUCLE_rubrique>
+                </ul>
+            </div>
+        </header>
+        <div class="self__body medium-8 column right">
+            [<section class="#EDIT{chapo} chapo surlignable self-article__chapo">
+                (#CHAPO|image_reduire{500,0})
+            </section>]
+            [<section class="#EDIT{texte} texte surlignable self-article__texte">
+                (#TEXTE|image_reduire{500,0})
+            </section>]
+            [<section class="#EDIT{ps} ps surlignable">
+                <h2 class="section__titre"><:info_ps:></h2>(#PS|image_reduire{500,0})
+            </section>]
+            [<section class="notes">
+                <h2 class="section__titre"><:info_notes:></h2>
+                (#NOTES)
+            </section>]
+
+            [(#REM) Gestion du portfolio et des documents ]
+            [(#INCLURE{fond=inclure/documents,id_article})]
+
+        </div>
+        <div class="medium-4 column left">
+            <div class="row">
+                [<aside class="self__aside small-6 medium-12 column">
+                    (#INCLURE{fond=liste/mots,id_article}) 
+                </aside>]
+                [<aside class="self__aside small-6 medium-12 column">
+                    [(#REM) Inclure le modele des liens de traductions ]
+                    (#MODELE{article_traductions})
+                </aside>]
+                [<aside class="self__aside small-6 medium-12 column">
+                    (#PLUGIN{socialtags}|oui)
+                    [(#INCLURE{fond=liste/partagez,id_article})]
+                </aside>]
+            </div>
+        </div>
+    </article>
+
+    [(#REM) Fil d'Ariane ]
+    <nav class="breadcrumb-nav medium-8 medium-offset-4 column">
+        <ul class="breadcrumb">
+            <li class="breadcrumb__item"><a href="#URL_SITE_SPIP/"><:accueil_site:></a></li>
+            <BOUCLE_ariane(HIERARCHIE){id_article}>
+            <li class="breadcrumb__item"><a href="#URL_RUBRIQUE">[(#TITRE|couper{40})]</a></li>
+            </BOUCLE_ariane>
+            [<li class="breadcrumb__item breadcrumb__item--is-active">(#TITRE|couper{40})</li>]
+        </ul>
+    </nav>
+</div>
+</BOUCLE_content>

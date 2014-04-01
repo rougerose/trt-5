@@ -40,7 +40,7 @@
     .site-nav {
         &,
         & ul {
-            list-style-type: none;
+            list-style: none;
         }
         // display: block;
         padding-right: 1em;
@@ -71,8 +71,6 @@
                 font-weight: bold;
             }
         }
-
-
 
 .site-nav-open {
     position: absolute;

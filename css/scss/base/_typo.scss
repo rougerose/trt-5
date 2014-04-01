@@ -2,6 +2,10 @@
    #TYPO
    ========================================================================== */
 
+body {
+  font-family: $font-base;
+}
+
 /* 
    #LINKS
    ========================================================================== */
@@ -18,3 +22,26 @@ a {
     }
 }
 
+/* 
+   #HEADINGS
+   ========================================================================== */
+
+h1,h2,h3,h4,h5,h6 {font-family: $font-base;}
+
+h2.spip,h3.spip,h4.spip,h5.spip,h6.spip,
+.hN {line-height: 1.1;}
+
+h2.spip {font-size: rem-calc(26);}
+h3.spip {font-size: rem-calc(22);}
+h4.spip {font-size: rem-calc(18);}
+h5.spip {font-size: rem-calc(18); font-style: italic;}
+h6.spip {font-size: rem-calc(16); font-weight: bold;}
+
+.section__titre {
+  border-bottom: 1px solid #000;
+  margin-bottom: 1em;
+  font-family: $font-reg;
+  font-size: rem-calc(16);
+  line-height: 1.4;
+  text-transform: uppercase;
+}

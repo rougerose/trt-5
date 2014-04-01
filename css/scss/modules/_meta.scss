@@ -1,0 +1,32 @@
+/* ==========================================================================
+   #META
+   ========================================================================== */
+
+.meta {
+    @extend %bare-list;
+    border: 1px dotted $color-2;
+    border-width: 1px 0;
+    padding: .5em 0;
+    font-family: $font-reg;
+    font-size: rem-calc(14);
+    color: $color-2;
+    .self__meta & {
+        font-size: rem-calc(14);
+    }
+}
+    .meta__item {
+        display: block;
+    }
+    .category {
+        &:before {
+            margin-left: 0;
+        }
+    }
+
+
+@media #{$medium-up} {
+    .meta {
+        border-width: 0;
+        padding: 0;
+    }
+}

@@ -1,0 +1,39 @@
+/* ==========================================================================
+   #DOCUMENTS
+   ========================================================================== */
+
+.docs {
+    .section__titre {
+        
+    }
+}
+.doc {
+    margin: 0;
+}
+    .doc__img {
+        .fichier & {
+            float: left;
+            margin-right: 1em;
+        }
+    }
+    .doc__body {
+        .fichier & {
+            overflow: hidden;
+        }
+    }
+        .doc__title {
+            font-size: rem-calc(13);
+            font-weight: bold;
+            line-height: 1.2;
+        }
+        .doc__desc {
+            font-size: rem-calc(13);
+            font-style: italic;
+            line-height: 1.2;
+        }
+
+.hr-docs {
+    border: 0;
+    height: 0;
+    background: #fff;
+}

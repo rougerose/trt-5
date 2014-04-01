@@ -4,3 +4,4 @@
 # projet spip : tous les fichiers et dossiers sont ignores
 /bower_components
 /node_modules
+.sass-cache

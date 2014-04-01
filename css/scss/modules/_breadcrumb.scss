@@ -1,0 +1,30 @@
+/* ==========================================================================
+   #BREADCRUMB
+   ========================================================================== */
+
+.breadcrumb {
+    @extend %bare-list;
+    margin-bottom: 2em;
+    font-family: $font-reg;
+    font-size: rem-calc(13px);
+}
+    .breadcrumb__item {
+        display: inline;
+        text-transform: uppercase;        
+        &:before {
+            color: lighten($color-2,10%);
+            margin: 0 rem-calc(6);
+            position: relative;
+            top: 1px;
+            content: "/";
+        }
+        &:first-child:before {
+            margin-left: 0;
+        }
+        a {
+            color: $color-2;
+            &:hover {
+                color: $color-1;
+            }
+        }
+    }
