@@ -2,13 +2,13 @@
 <div class="row">
     <article class="self self-article clearfix content-principal">
         <header class="self__header">
-            <div class="self__title medium-8 medium-offset-4 column">
+            <div class="self__title medium-9 medium-offset-3 column">
                 [<p class="#EDIT{surtitre} surtitre">(#SURTITRE)</p>]
                 <h1 class="hN">
                     <span class="#EDIT{titre} titre">#TITRE</span>[ <small class="#EDIT{soustitre} soustitre">(#SOUSTITRE)</small>]
                 </h1>
             </div>
-            <div class="self__meta medium-4 column left">
+            <div class="self__meta medium-3 column left">
                 <ul class="meta">
                     <li class="meta__item"><time class="updated" datetime="[(#DATE|affdate{Y-m-d})]">[(#DATE|affdate)]</time></li>
                     [<li class="meta__item"><:local:par:> (#LESAUTEURS)</li>]
@@ -18,7 +18,7 @@
                 </ul>
             </div>
         </header>
-        <div class="self__body medium-8 column right">
+        <div class="self__body medium-9 column right">
             [<section class="#EDIT{chapo} chapo surlignable self-article__chapo">
                 (#CHAPO|image_reduire{500,0})
             </section>]
@@ -37,7 +37,7 @@
             [(#INCLURE{fond=inclure/documents,id_article})]
 
         </div>
-        <div class="medium-4 column left">
+        <div class="medium-3 column left">
             <div class="row">
                 [<aside class="self__aside small-6 medium-12 column">
                     (#INCLURE{fond=liste/mots,id_article}) 
@@ -55,7 +55,7 @@
     </article>
 
     [(#REM) Fil d'Ariane ]
-    <nav class="breadcrumb-nav medium-8 medium-offset-4 column">
+    <nav class="breadcrumb-nav medium-9 medium-offset-3 column">
         <ul class="breadcrumb">
             <li class="breadcrumb__item"><a href="#URL_SITE_SPIP/"><:accueil_site:></a></li>
             <BOUCLE_ariane(HIERARCHIE){id_article}>

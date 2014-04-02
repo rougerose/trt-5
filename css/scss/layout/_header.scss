@@ -21,7 +21,6 @@
         .slogan-item3 {color: $color-2;}
     }
 
-
 @media #{$medium-up} {
     .slogan-container {
         position: inherit;
@@ -29,5 +28,6 @@
     .slogan {
         position: absolute;
         bottom: 1em;
+        font-size: rem-calc(18);
     }
 }
