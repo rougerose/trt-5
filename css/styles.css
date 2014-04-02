@@ -5179,17 +5179,10 @@ h6.spip {
   padding-bottom: 1em;
   border-bottom: 2px solid #d52b1e; }
 
-.site-logo img {
-  display: inline-block;
-  width: 200px;
-  height: 100px;
-  background-color: #d52b1e;
-  margin-right: 0.9375rem; }
+.site-logo {
+  display: block; }
 
 .slogan {
-  display: inline-block;
-  vertical-align: bottom;
-  overflow: hidden;
   margin-top: 1em;
   font-family: 'dinmed';
   text-transform: uppercase;
@@ -5201,6 +5194,13 @@ h6.spip {
   .slogan .slogan-item3 {
     color: #adafaf; }
 
+@media only screen and (min-width: 40.063em) {
+  .slogan-container {
+    position: inherit; }
+
+  .slogan {
+    position: absolute;
+    bottom: 1em; } }
 /* ==========================================================================
    #NAV
    ========================================================================== */

@@ -9,18 +9,9 @@
     border-bottom: 2px solid $color-1;
 }
     .site-logo {
-        img {
-            display: inline-block;
-            width: 200px;
-            height: 100px;
-            background-color: $color-1;
-            margin-right: $column-gutter / 2;
-        }
+        display:block;
     }
     .slogan {
-        display: inline-block;
-        vertical-align: bottom;
-        overflow: hidden;
         margin-top: 1em;
         font-family: 'dinmed';
         text-transform: uppercase;
@@ -29,3 +20,14 @@
         .slogan-item2 {color: $color-1;}
         .slogan-item3 {color: $color-2;}
     }
+
+
+@media #{$medium-up} {
+    .slogan-container {
+        position: inherit;
+    }
+    .slogan {
+        position: absolute;
+        bottom: 1em;
+    }
+}
