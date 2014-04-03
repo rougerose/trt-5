@@ -1,0 +1,73 @@
+<BOUCLE_rubrique(RUBRIQUES){id_rubrique}>
+<div class="row">
+    <article class="self self-rubrique clearfix content-principal">
+        <div class="medium-9 medium-offset-3 column">
+            <header class="self__header">
+                <div class="self__title">
+                    <h1 class="hN"><span class="#EDIT{titre} titre">#TITRE</span></h1>
+                </div>
+            </header>
+            <div class="self__body">
+                [<section class="#EDIT{texte} texte surlignable self-rubrique__texte">
+                    (#TEXTE|image_reduire{500,0})
+                </section>]
+                [<section class="notes">
+                    <h2 class="section__titre"><:info_notes:></h2>
+                    (#NOTES)
+                </section>]
+            </div>
+        </div>
+        <!-- 
+        <div class="medium-6 medium-offset-3 column">
+            [(#REM) Les sélections, si elles existent ]
+            <div class="clearfix">
+                <ul class="example-orbit-content" data-orbit 
+                    data-options="animation:slide; animation_speed:500; bullets:true; navigation_arrows:false;slide_selector:li;slide_number:false;timer:false;"
+                >
+                  <li data-orbit-slide="headline-1">
+                    <div>
+                      <h2>Headline 1</h2>
+                      <h3>Subheadline</h3>
+                    </div>
+                  </li>
+                  <li data-orbit-slide="headline-2">
+                    <div>
+                      <h2>Headline 2</h2>
+                      <h3>Subheadline</h3>
+                    </div>
+                  </li>
+                  <li data-orbit-slide="headline-3">
+                    <div>
+                      <h2>Headline 3</h2>
+                      <h3>Subheadline</h3>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+            <BOUCLE_selection(ARTICLES pb_selection){lang}{par ordre}{spip_pb_selection.id_rubrique=#ID_RUBRIQUE}>
+            <p>Selection</p>
+            </BOUCLE_selection>
+        </div>
+        -->
+        [(#REM) Les articles de la rubrique, sinon les sous-rubriques ]
+        <BOUCLE_articles(ARTICLES){id_rubrique}{0,1}>
+            <INCLURE{fond=liste/articles-resume,env,ajax,titre=<:articles_tous:>} />
+        </BOUCLE_articles>
+        <BOUCLE_sous_rubriques(RUBRIQUES){id_parent}>
+            <INCLURE{fond=liste/rubriques-resume,id_rubrique} />
+        </BOUCLE_sous_rubriques>
+        <//B_articles>
+    </article>
+
+    [(#REM) Fil d'Ariane ]
+    <nav class="breadcrumb-nav medium-9 medium-offset-3 column">
+        <ul class="breadcrumb">
+            <li class="breadcrumb__item"><a href="#URL_SITE_SPIP/"><:accueil_site:></a></li>
+            <BOUCLE_ariane(HIERARCHIE){id_rubrique}>
+            <li class="breadcrumb__item"><a href="#URL_RUBRIQUE">[(#TITRE|couper{40})]</a></li>
+            </BOUCLE_ariane>
+            [<li class="breadcrumb__item breadcrumb__item--is-active">(#TITRE|couper{40})</li>]
+        </ul>
+    </nav>
+</div>
+</BOUCLE_rubrique>

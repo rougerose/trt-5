@@ -9,7 +9,7 @@
                 </h1>
             </div>
             <div class="self__meta medium-3 column left">
-                <ul class="meta">
+                <ul class="meta meta--article">
                     <li class="meta__item"><time class="updated" datetime="[(#DATE|affdate{Y-m-d})]">[(#DATE|affdate)]</time></li>
                     [<li class="meta__item"><:local:par:> (#LESAUTEURS)</li>]
                     <BOUCLE_rubrique(RUBRIQUES){id_rubrique}>
@@ -26,10 +26,10 @@
                 (#TEXTE|image_reduire{500,0})
             </section>]
             [<section class="#EDIT{ps} ps surlignable">
-                <h2 class="section__titre"><:info_ps:></h2>(#PS|image_reduire{500,0})
+                <h2 class="section__titre section__titre--body"><:info_ps:></h2>(#PS|image_reduire{500,0})
             </section>]
             [<section class="notes">
-                <h2 class="section__titre"><:info_notes:></h2>
+                <h2 class="section__titre section__titre--body"><:info_notes:></h2>
                 (#NOTES)
             </section>]
 

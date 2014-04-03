@@ -1,0 +1,18 @@
+<B_articles>
+<div class="liste resume articles">
+    #ANCRE_PAGINATION
+    <div class="medium-3 columns left">
+        <h2 class="section__titre section__titre--offset">[(#ENV{titre,<:derniers_articles:>})]</h2>
+    </div>
+    <div class="medium-9 columns">
+        <ul class="liste-items medium-block-grid-3">
+            <BOUCLE_articles(ARTICLES){id_rubrique?}{!par date}{pagination #ENV{nb,5}}>
+            <li class="item hentry">
+                #INCLURE{fond=inclure/article-resume,id_article}
+            </li>
+            </BOUCLE_articles>
+        </ul>
+        [<nav class="pagination">(#PAGINATION)</nav>]
+    </div>
+</div>
+</B_articles>

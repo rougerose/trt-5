@@ -26,6 +26,14 @@
     .hN {
         font-size: rem-calc(28);
         line-height: 1.1;
+        color: #000;
+    }
+    .self-article & .hN {
+        font-style: italic;
+    }
+    .self-rubrique & .hN {
+        font-family: $font-reg;
+        font-size: rem-calc(36);
     }
 }
 
@@ -46,6 +54,12 @@
     .ps {
         padding: 1em 1em .5em;
         background-color: rgba(#eee,0.5);
+    }
+}
+
+.self-rubrique__texte {
+    p {
+        font-size: rem-calc(20);
     }
 }
 

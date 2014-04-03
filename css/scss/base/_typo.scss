@@ -3,7 +3,7 @@
    ========================================================================== */
 
 body {
-  font-family: $font-base;
+    font-family: $font-base;
 }
 
 /* 
@@ -37,11 +37,19 @@ h4.spip {font-size: rem-calc(18);}
 h5.spip {font-size: rem-calc(18); font-style: italic;}
 h6.spip {font-size: rem-calc(16); font-weight: bold;}
 
+
 .section__titre {
-  border-bottom: 1px solid #000;
-  margin-bottom: 1em;
-  font-family: $font-reg;
-  font-size: rem-calc(16);
-  line-height: 1.4;
-  text-transform: uppercase;
+    font-family: $font-reg;
+    font-size: rem-calc(16);
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.section__titre--body {
+    border-bottom: 1px solid #000;
+    margin-bottom: 1em;
+}
+
+.section__titre--offset {
+  color: $color-2;
 }

@@ -1,0 +1,45 @@
+/* ==========================================================================
+   #RESUMES
+   ========================================================================== */
+
+/* 
+   #RESUME-ARTICLE
+   ========================================================================== */
+.resume-article {
+    // padding-bottom: 1em;
+    // border-bottom: 1px solid lighten($color-2,20%);
+    // min-height: 0%;
+}
+.resume-article__title {
+    font-size: rem-calc(17);
+    font-style: italic;
+}
+.resume-article__desc {
+    p {
+        font-size: rem-calc(15);
+    }
+}
+
+/* 
+   #RESUME-RUBRIQUE
+   ========================================================================== */
+.resume-rubriques {
+    margin-bottom: 1em;
+}
+.resume-rubrique__title {
+    font-family: $font-bold;
+    font-size: rem-calc(20);
+    text-transform: none;
+}
+.resume-rubrique__desc {
+    p {
+        font-size: rem-calc(18);
+    }
+}
+
+.more--sousrubrique {
+    border-bottom: 1px dotted $color-2;
+    padding-bottom: 2em;
+    text-align: center;
+    font-style: italic;
+}
