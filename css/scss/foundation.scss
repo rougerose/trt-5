@@ -4,7 +4,8 @@
 
 // Make sure the charset is set appropriately
 @charset "UTF-8";
-
+@import "foundation/_functions";
+@import "_settings";
 // surcharges variables
 // vcard
 $microformat-margin: inherit;
@@ -12,6 +13,18 @@ $microformat-border-width: 0;
 $microformat-padding: 0;
 $microformat-fullname-font-weight: normal;
 $microformat-fullname-font-size: inherit;
+
+// surcharges orbit
+$orbit-container-bg: $color-1; // rgba(#f5f5f5,0.5);
+$orbit-nav-bg: transparent;
+$orbit-nav-bg-hover: rgba(0,0,0,0.9);
+$orbit-nav-arrow-color: #ccc;
+$orbit-nav-arrow-color-hover: #fff;
+$orbit-bullet-radius: rem-calc(14);
+$orbit-bullet-nav-color: $color-1;
+$orbit-bullet-nav-color-active: #fff;
+// $orbit-timer-bg: #ccc;
+// $orbit-timer-show-progress-bar: true;
 
 // Behold, here are all the Foundation components.
 @import

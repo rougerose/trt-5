@@ -1,0 +1,39 @@
+/* ==========================================================================
+   #ORBIT
+   ========================================================================== */
+
+#orbit {
+    list-style: none;
+    overflow: hidden;
+    .resume-article {
+        margin: 1em 1em 0;
+    }
+    .resume-article__title {
+        font-size: rem-calc(30);
+    }
+}
+
+.orbit-rubrique {
+    .orbit-container {
+        margin-bottom: 4em;
+        .orbit-prev,
+        .orbit-next {
+            display: none;
+        }
+    }
+    .orbit-bullets {
+        > li {
+            border: 2px solid #fff;
+            &:hover {
+                background: #fff;
+            }
+        }
+    }
+    .resume-article {
+        a:hover {color: #fff;}
+    }
+    .resume-article__desc,
+    .meta {
+        color: #fff;
+    }
+}

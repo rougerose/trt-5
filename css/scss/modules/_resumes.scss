@@ -5,14 +5,17 @@
 /* 
    #RESUME-ARTICLE
    ========================================================================== */
-.resume-article {
-    // padding-bottom: 1em;
-    // border-bottom: 1px solid lighten($color-2,20%);
-    // min-height: 0%;
-}
+// .resume-article {}
 .resume-article__title {
-    font-size: rem-calc(17);
-    font-style: italic;
+    font-size: rem-calc(16);
+    font-weight: bold;
+    // font-style: italic;
+    a {
+      color: #000;
+      &:hover {
+        color: $color-1;
+      }
+    }
 }
 .resume-article__desc {
     p {
@@ -24,7 +27,7 @@
    #RESUME-RUBRIQUE
    ========================================================================== */
 .resume-rubriques {
-    margin-bottom: 1em;
+    margin-bottom: 3em;
 }
 .resume-rubrique__title {
     font-family: $font-bold;

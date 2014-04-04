@@ -352,8 +352,9 @@ td,
 th {
   padding: 0; }
 
+/* color link */
 meta.foundation-version {
-  font-family: "/5.2.0/"; }
+  font-family: "/5.2.1/"; }
 
 meta.foundation-mq-small {
   font-family: "/only screen and (max-width: 40em)/";
@@ -516,105 +517,129 @@ select {
   .columns.small-uncentered {
     margin-left: 0;
     margin-right: 0;
-    float: left; }
+    float: left !important; }
 
   .column.small-uncentered.opposite,
   .columns.small-uncentered.opposite {
     float: right; }
 
   .small-push-0 {
+    position: relative;
     left: 0%;
     right: auto; }
 
   .small-pull-0 {
+    position: relative;
     right: 0%;
     left: auto; }
 
   .small-push-1 {
+    position: relative;
     left: 8.33333%;
     right: auto; }
 
   .small-pull-1 {
+    position: relative;
     right: 8.33333%;
     left: auto; }
 
   .small-push-2 {
+    position: relative;
     left: 16.66667%;
     right: auto; }
 
   .small-pull-2 {
+    position: relative;
     right: 16.66667%;
     left: auto; }
 
   .small-push-3 {
+    position: relative;
     left: 25%;
     right: auto; }
 
   .small-pull-3 {
+    position: relative;
     right: 25%;
     left: auto; }
 
   .small-push-4 {
+    position: relative;
     left: 33.33333%;
     right: auto; }
 
   .small-pull-4 {
+    position: relative;
     right: 33.33333%;
     left: auto; }
 
   .small-push-5 {
+    position: relative;
     left: 41.66667%;
     right: auto; }
 
   .small-pull-5 {
+    position: relative;
     right: 41.66667%;
     left: auto; }
 
   .small-push-6 {
+    position: relative;
     left: 50%;
     right: auto; }
 
   .small-pull-6 {
+    position: relative;
     right: 50%;
     left: auto; }
 
   .small-push-7 {
+    position: relative;
     left: 58.33333%;
     right: auto; }
 
   .small-pull-7 {
+    position: relative;
     right: 58.33333%;
     left: auto; }
 
   .small-push-8 {
+    position: relative;
     left: 66.66667%;
     right: auto; }
 
   .small-pull-8 {
+    position: relative;
     right: 66.66667%;
     left: auto; }
 
   .small-push-9 {
+    position: relative;
     left: 75%;
     right: auto; }
 
   .small-pull-9 {
+    position: relative;
     right: 75%;
     left: auto; }
 
   .small-push-10 {
+    position: relative;
     left: 83.33333%;
     right: auto; }
 
   .small-pull-10 {
+    position: relative;
     right: 83.33333%;
     left: auto; }
 
   .small-push-11 {
+    position: relative;
     left: 91.66667%;
     right: auto; }
 
   .small-pull-11 {
+    position: relative;
     right: 91.66667%;
     left: auto; }
 
@@ -721,105 +746,129 @@ select {
   .columns.medium-uncentered {
     margin-left: 0;
     margin-right: 0;
-    float: left; }
+    float: left !important; }
 
   .column.medium-uncentered.opposite,
   .columns.medium-uncentered.opposite {
     float: right; }
 
   .medium-push-0 {
+    position: relative;
     left: 0%;
     right: auto; }
 
   .medium-pull-0 {
+    position: relative;
     right: 0%;
     left: auto; }
 
   .medium-push-1 {
+    position: relative;
     left: 8.33333%;
     right: auto; }
 
   .medium-pull-1 {
+    position: relative;
     right: 8.33333%;
     left: auto; }
 
   .medium-push-2 {
+    position: relative;
     left: 16.66667%;
     right: auto; }
 
   .medium-pull-2 {
+    position: relative;
     right: 16.66667%;
     left: auto; }
 
   .medium-push-3 {
+    position: relative;
     left: 25%;
     right: auto; }
 
   .medium-pull-3 {
+    position: relative;
     right: 25%;
     left: auto; }
 
   .medium-push-4 {
+    position: relative;
     left: 33.33333%;
     right: auto; }
 
   .medium-pull-4 {
+    position: relative;
     right: 33.33333%;
     left: auto; }
 
   .medium-push-5 {
+    position: relative;
     left: 41.66667%;
     right: auto; }
 
   .medium-pull-5 {
+    position: relative;
     right: 41.66667%;
     left: auto; }
 
   .medium-push-6 {
+    position: relative;
     left: 50%;
     right: auto; }
 
   .medium-pull-6 {
+    position: relative;
     right: 50%;
     left: auto; }
 
   .medium-push-7 {
+    position: relative;
     left: 58.33333%;
     right: auto; }
 
   .medium-pull-7 {
+    position: relative;
     right: 58.33333%;
     left: auto; }
 
   .medium-push-8 {
+    position: relative;
     left: 66.66667%;
     right: auto; }
 
   .medium-pull-8 {
+    position: relative;
     right: 66.66667%;
     left: auto; }
 
   .medium-push-9 {
+    position: relative;
     left: 75%;
     right: auto; }
 
   .medium-pull-9 {
+    position: relative;
     right: 75%;
     left: auto; }
 
   .medium-push-10 {
+    position: relative;
     left: 83.33333%;
     right: auto; }
 
   .medium-pull-10 {
+    position: relative;
     right: 83.33333%;
     left: auto; }
 
   .medium-push-11 {
+    position: relative;
     left: 91.66667%;
     right: auto; }
 
   .medium-pull-11 {
+    position: relative;
     right: 91.66667%;
     left: auto; }
 
@@ -917,98 +966,122 @@ select {
     float: left; }
 
   .push-0 {
+    position: relative;
     left: 0%;
     right: auto; }
 
   .pull-0 {
+    position: relative;
     right: 0%;
     left: auto; }
 
   .push-1 {
+    position: relative;
     left: 8.33333%;
     right: auto; }
 
   .pull-1 {
+    position: relative;
     right: 8.33333%;
     left: auto; }
 
   .push-2 {
+    position: relative;
     left: 16.66667%;
     right: auto; }
 
   .pull-2 {
+    position: relative;
     right: 16.66667%;
     left: auto; }
 
   .push-3 {
+    position: relative;
     left: 25%;
     right: auto; }
 
   .pull-3 {
+    position: relative;
     right: 25%;
     left: auto; }
 
   .push-4 {
+    position: relative;
     left: 33.33333%;
     right: auto; }
 
   .pull-4 {
+    position: relative;
     right: 33.33333%;
     left: auto; }
 
   .push-5 {
+    position: relative;
     left: 41.66667%;
     right: auto; }
 
   .pull-5 {
+    position: relative;
     right: 41.66667%;
     left: auto; }
 
   .push-6 {
+    position: relative;
     left: 50%;
     right: auto; }
 
   .pull-6 {
+    position: relative;
     right: 50%;
     left: auto; }
 
   .push-7 {
+    position: relative;
     left: 58.33333%;
     right: auto; }
 
   .pull-7 {
+    position: relative;
     right: 58.33333%;
     left: auto; }
 
   .push-8 {
+    position: relative;
     left: 66.66667%;
     right: auto; }
 
   .pull-8 {
+    position: relative;
     right: 66.66667%;
     left: auto; }
 
   .push-9 {
+    position: relative;
     left: 75%;
     right: auto; }
 
   .pull-9 {
+    position: relative;
     right: 75%;
     left: auto; }
 
   .push-10 {
+    position: relative;
     left: 83.33333%;
     right: auto; }
 
   .pull-10 {
+    position: relative;
     right: 83.33333%;
     left: auto; }
 
   .push-11 {
+    position: relative;
     left: 91.66667%;
     right: auto; }
 
   .pull-11 {
+    position: relative;
     right: 91.66667%;
     left: auto; } }
 @media only screen and (min-width: 64.063em) {
@@ -1022,105 +1095,129 @@ select {
   .columns.large-uncentered {
     margin-left: 0;
     margin-right: 0;
-    float: left; }
+    float: left !important; }
 
   .column.large-uncentered.opposite,
   .columns.large-uncentered.opposite {
     float: right; }
 
   .large-push-0 {
+    position: relative;
     left: 0%;
     right: auto; }
 
   .large-pull-0 {
+    position: relative;
     right: 0%;
     left: auto; }
 
   .large-push-1 {
+    position: relative;
     left: 8.33333%;
     right: auto; }
 
   .large-pull-1 {
+    position: relative;
     right: 8.33333%;
     left: auto; }
 
   .large-push-2 {
+    position: relative;
     left: 16.66667%;
     right: auto; }
 
   .large-pull-2 {
+    position: relative;
     right: 16.66667%;
     left: auto; }
 
   .large-push-3 {
+    position: relative;
     left: 25%;
     right: auto; }
 
   .large-pull-3 {
+    position: relative;
     right: 25%;
     left: auto; }
 
   .large-push-4 {
+    position: relative;
     left: 33.33333%;
     right: auto; }
 
   .large-pull-4 {
+    position: relative;
     right: 33.33333%;
     left: auto; }
 
   .large-push-5 {
+    position: relative;
     left: 41.66667%;
     right: auto; }
 
   .large-pull-5 {
+    position: relative;
     right: 41.66667%;
     left: auto; }
 
   .large-push-6 {
+    position: relative;
     left: 50%;
     right: auto; }
 
   .large-pull-6 {
+    position: relative;
     right: 50%;
     left: auto; }
 
   .large-push-7 {
+    position: relative;
     left: 58.33333%;
     right: auto; }
 
   .large-pull-7 {
+    position: relative;
     right: 58.33333%;
     left: auto; }
 
   .large-push-8 {
+    position: relative;
     left: 66.66667%;
     right: auto; }
 
   .large-pull-8 {
+    position: relative;
     right: 66.66667%;
     left: auto; }
 
   .large-push-9 {
+    position: relative;
     left: 75%;
     right: auto; }
 
   .large-pull-9 {
+    position: relative;
     right: 75%;
     left: auto; }
 
   .large-push-10 {
+    position: relative;
     left: 83.33333%;
     right: auto; }
 
   .large-pull-10 {
+    position: relative;
     right: 83.33333%;
     left: auto; }
 
   .large-push-11 {
+    position: relative;
     left: 91.66667%;
     right: auto; }
 
   .large-pull-11 {
+    position: relative;
     right: 91.66667%;
     left: auto; }
 
@@ -1218,98 +1315,122 @@ select {
     float: left; }
 
   .push-0 {
+    position: relative;
     left: 0%;
     right: auto; }
 
   .pull-0 {
+    position: relative;
     right: 0%;
     left: auto; }
 
   .push-1 {
+    position: relative;
     left: 8.33333%;
     right: auto; }
 
   .pull-1 {
+    position: relative;
     right: 8.33333%;
     left: auto; }
 
   .push-2 {
+    position: relative;
     left: 16.66667%;
     right: auto; }
 
   .pull-2 {
+    position: relative;
     right: 16.66667%;
     left: auto; }
 
   .push-3 {
+    position: relative;
     left: 25%;
     right: auto; }
 
   .pull-3 {
+    position: relative;
     right: 25%;
     left: auto; }
 
   .push-4 {
+    position: relative;
     left: 33.33333%;
     right: auto; }
 
   .pull-4 {
+    position: relative;
     right: 33.33333%;
     left: auto; }
 
   .push-5 {
+    position: relative;
     left: 41.66667%;
     right: auto; }
 
   .pull-5 {
+    position: relative;
     right: 41.66667%;
     left: auto; }
 
   .push-6 {
+    position: relative;
     left: 50%;
     right: auto; }
 
   .pull-6 {
+    position: relative;
     right: 50%;
     left: auto; }
 
   .push-7 {
+    position: relative;
     left: 58.33333%;
     right: auto; }
 
   .pull-7 {
+    position: relative;
     right: 58.33333%;
     left: auto; }
 
   .push-8 {
+    position: relative;
     left: 66.66667%;
     right: auto; }
 
   .pull-8 {
+    position: relative;
     right: 66.66667%;
     left: auto; }
 
   .push-9 {
+    position: relative;
     left: 75%;
     right: auto; }
 
   .pull-9 {
+    position: relative;
     right: 75%;
     left: auto; }
 
   .push-10 {
+    position: relative;
     left: 83.33333%;
     right: auto; }
 
   .pull-10 {
+    position: relative;
     right: 83.33333%;
     left: auto; }
 
   .push-11 {
+    position: relative;
     left: 91.66667%;
     right: auto; }
 
   .pull-11 {
+    position: relative;
     right: 91.66667%;
     left: auto; } }
 [class*="block-grid-"] {
@@ -2394,7 +2515,7 @@ select {
   overflow: hidden;
   width: 100%;
   position: relative;
-  background: none; }
+  background: #d52b1e; }
   .orbit-container .orbit-slides-container {
     list-style: none;
     margin: 0;
@@ -2554,12 +2675,12 @@ select {
     height: 60px;
     line-height: 50px;
     color: white;
-    background-color: none;
+    background-color: transparent;
     text-indent: -9999px !important;
     z-index: 10; }
     .orbit-container .orbit-prev:hover,
     .orbit-container .orbit-next:hover {
-      background-color: rgba(0, 0, 0, 0.3); }
+      background-color: rgba(0, 0, 0, 0.9); }
     .orbit-container .orbit-prev > span,
     .orbit-container .orbit-next > span {
       position: absolute;
@@ -2574,7 +2695,7 @@ select {
     .orbit-container .orbit-prev > span {
       border-right-style: solid;
       border-color: transparent;
-      border-right-color: white; }
+      border-right-color: #cccccc; }
     .orbit-container .orbit-prev:hover > span {
       border-right-color: white; }
   .orbit-container .orbit-next {
@@ -2582,7 +2703,7 @@ select {
     .orbit-container .orbit-next > span {
       border-color: transparent;
       border-left-style: solid;
-      border-left-color: white;
+      border-left-color: #cccccc;
       left: 50%;
       margin-left: -4px; }
     .orbit-container .orbit-next:hover > span {
@@ -2601,15 +2722,15 @@ select {
   display: block; }
   .orbit-bullets li {
     display: inline-block;
-    width: 0.5625rem;
-    height: 0.5625rem;
-    background: #cccccc;
+    width: 0.875rem;
+    height: 0.875rem;
+    background: #d52b1e;
     float: none;
     margin-right: 6px;
     -webkit-border-radius: 1000px;
     border-radius: 1000px; }
     .orbit-bullets li.active {
-      background: #999999; }
+      background: white; }
     .orbit-bullets li:last-child {
       margin-right: 0; }
 
@@ -3691,15 +3812,15 @@ meta.foundation-mq-topbar {
   .tab-bar .menu-icon span {
     position: absolute;
     display: block;
-    width: 1rem;
     height: 0;
-    left: 0.8125rem;
-    top: 0.3125rem;
-    -webkit-box-shadow: 1px 10px 1px 1px white, 1px 16px 1px 1px white, 1px 22px 1px 1px white;
-    box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white; }
+    width: 1rem;
+    top: 0.9375rem;
+    left: 0.90625rem;
+    -webkit-box-shadow: 1px 0px 1px 1px white, 1px 7px 1px 1px white, 1px 14px 1px 1px white;
+    box-shadow: 0 0px 0 1px white, 0 7px 0 1px white, 0 14px 0 1px white; }
   .tab-bar .menu-icon:hover span {
-    -webkit-box-shadow: 1px 10px 1px 1px #b3b3b3, 1px 16px 1px 1px #b3b3b3, 1px 22px 1px 1px #b3b3b3;
-    box-shadow: 0 10px 0 1px #b3b3b3, 0 16px 0 1px #b3b3b3, 0 22px 0 1px #b3b3b3; }
+    -webkit-box-shadow: 1px 0px 1px 1px #b3b3b3, 1px 7px 1px 1px #b3b3b3, 1px 14px 1px 1px #b3b3b3;
+    box-shadow: 0 0px 0 1px #b3b3b3, 0 7px 0 1px #b3b3b3, 0 14px 0 1px #b3b3b3; }
 
 .left-off-canvas-menu {
   -webkit-backface-visibility: hidden;
@@ -5222,7 +5343,7 @@ a {
   -moz-transition: all 0.25s ease;
   transition: all 0.25s ease; }
   a:hover {
-    color: rgba(213, 43, 30, 0.5); }
+    color: black; }
   p a {
     border-bottom: 1px dotted #d52b1e; }
 
@@ -5412,7 +5533,8 @@ h6.spip {
 .breadcrumb {
   margin-bottom: 2em;
   font-family: "Dinreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.8125rem; }
+  font-size: 0.8125rem;
+  color: #000; }
 
 .breadcrumb__item {
   display: inline;
@@ -5491,8 +5613,12 @@ h6.spip {
    #RESUME-ARTICLE
    ========================================================================== */
 .resume-article__title {
-  font-size: 1.0625rem;
-  font-style: italic; }
+  font-size: 1rem;
+  font-weight: bold; }
+  .resume-article__title a {
+    color: #000; }
+    .resume-article__title a:hover {
+      color: #d52b1e; }
 
 .resume-article__desc p {
   font-size: 0.9375rem; }
@@ -5501,7 +5627,7 @@ h6.spip {
    #RESUME-RUBRIQUE
    ========================================================================== */
 .resume-rubriques {
-  margin-bottom: 1em; }
+  margin-bottom: 3em; }
 
 .resume-rubrique__title {
   font-family: "Dinbold", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -5516,6 +5642,32 @@ h6.spip {
   padding-bottom: 2em;
   text-align: center;
   font-style: italic; }
+
+/* ==========================================================================
+   #ORBIT
+   ========================================================================== */
+#orbit {
+  list-style: none;
+  overflow: hidden; }
+  #orbit .resume-article {
+    margin: 1em 1em 0; }
+  #orbit .resume-article__title {
+    font-size: 1.875rem; }
+
+.orbit-rubrique .orbit-container {
+  margin-bottom: 4em; }
+  .orbit-rubrique .orbit-container .orbit-prev,
+  .orbit-rubrique .orbit-container .orbit-next {
+    display: none; }
+.orbit-rubrique .orbit-bullets > li {
+  border: 2px solid #fff; }
+  .orbit-rubrique .orbit-bullets > li:hover {
+    background: #fff; }
+.orbit-rubrique .resume-article a:hover {
+  color: #fff; }
+.orbit-rubrique .resume-article__desc,
+.orbit-rubrique .meta {
+  color: #fff; }
 
 /* ==========================================================================
    #SELF
@@ -5542,9 +5694,6 @@ h6.spip {
   color: #000; }
 .self-article .self__title .hN {
   font-style: italic; }
-.self-rubrique .self__title .hN {
-  font-family: "Dinreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 2.25rem; }
 
 /* 
    #SELF__BODY
