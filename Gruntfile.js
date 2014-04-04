@@ -31,7 +31,7 @@ module.exports = function(grunt) {
       dev: {
         files: {
           'js/public-head.js': ['bower_components/modernizr/modernizr.js'],
-          'js/lib-body.js': ['bower_components/foundation/js/foundation.js','bower_components/swiper/dist/idangerous.swiper.min.js']
+          'js/lib-body.js': ['bower_components/foundation/js/foundation.js']
         }
       }
     },
