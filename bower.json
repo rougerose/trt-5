@@ -8,7 +8,7 @@
   "license": "N/A",
   "private": true,
   "dependencies": {
-    "fontawesome":"~4.0.3",
-    "zurb/bower-foundation":"~5.2.0"
+    "fontawesome": "~4.0.3",
+    "foundation": "~5.2.1"
   }
 }
