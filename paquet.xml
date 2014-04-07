@@ -4,8 +4,8 @@
     <licence>MIT</licence>
     <necessite nom="Zcore" compatibilite="[2.4.0;[" />
     <necessite compatibilite="[1.0.4;[" nom="socialtags"/>
-    <!-- <necessite nom="IntertitresTdm" compatibilite="[0.9.5;[" /> -->
-    <!-- <necessite nom="jqueryui" compatibilite="[1.8.21;[" /> -->
-    <!-- <utilise nom="medias" compatibilite="[2.7.45;[" /> -->
+    <necessite nom="sommaire" compatibilite="[1.1.0;[" />
+    <necessite nom="mots_techniques" compatibilite="[1.0.0;[" />
+    <!-- <utilise nom="IntertitresTdm" compatibilite="[2.7.45;[" /> -->
     <chemin path=""/>
 </paquet>

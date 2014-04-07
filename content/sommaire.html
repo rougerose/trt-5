@@ -1,3 +1,36 @@
-<article class="content-principal">
-    
-</article>
+<div class="content-principal">
+    [(#REM) A propos du TRT-5 ]
+    #SET{articles_presentation,#ARRAY}
+    <BOUCLE_presentation_trt5(RUBRIQUES){id_mot=63}{0,1}>
+    <BOUCLE_articles_presentation(ARTICLES){id_rubrique}{par num titre}>#SET{articles_presentation,#GET{articles_presentation}|push{#ID_ARTICLE}}</BOUCLE_articles_presentation>
+    <div class="orbit-accueil orbit-accueil--about clearfix">
+        <div class="row">
+            [(#REM) SOMMAIRE ]
+            <B_sommaire>
+            <div class="medium-3 column">
+                <nav class="orbit-accueil__nav clearfix">
+                    <BOUCLE_sommaire(ARTICLES){id_article IN #GET{articles_presentation}}>
+                    <a data-orbit-link="headline-#ID_ARTICLE" class="">#TITRE</a>
+                    </BOUCLE_sommaire>
+                </nav>
+            </div><!-- /.column -->
+            </B_sommaire>
+
+            [(#REM) CONTENU ]
+            <B_contenu>
+            <div class="medium-9 column">
+                <h2 class="orbit-accueil__title">#TITRE</h2>
+                <ul id="orbit-trt5" class="orbit-accueil__content" data-orbit data-options="navigation_arrows: false; bullets:false;">
+                    <BOUCLE_contenu(ARTICLES){id_article IN #GET{articles_presentation}}>
+                    <li data-orbit-slide="headline-#ID_ARTICLE">
+                        <INCLURE{fond=inclure/presentation-article-complet,id_article} />
+                    </li>
+                    </BOUCLE_contenu>
+                </ul>
+                </BOUCLE_contenu>
+            </div><!-- /.column -->
+            </B_contenu>
+        </div><!-- /.row -->
+    </div><!-- /.orbit-accueil--about -->
+</BOUCLE_presentation_trt5>
+</div>

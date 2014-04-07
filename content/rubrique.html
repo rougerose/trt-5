@@ -21,7 +21,7 @@
         [(#REM) Les sélections, si elles existent ]
         <B_selection>
         <div class="medium-9 medium-offset-3 column orbit-rubrique">
-            <ul id="orbit" class="example-orbit-content" data-orbit>
+            <ul id="orbit-selection" class="orbit-selection" data-orbit>
                 <BOUCLE_selection(ARTICLES pb_selection){lang}{par ordre}{spip_pb_selection.id_rubrique=#ID_RUBRIQUE}>
                 <li data-orbit-slide="headline-#COMPTEUR_BOUCLE">
                     <INCLURE{fond=inclure/article-resume,id_article} />
