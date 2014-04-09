@@ -32,5 +32,56 @@
             </B_contenu>
         </div><!-- /.row -->
     </div><!-- /.orbit-accueil--about -->
-</BOUCLE_presentation_trt5>
-</div>
+    </BOUCLE_presentation_trt5>
+    
+    [(#REM) Sélection carousel + journée ]
+    <div class="group--majeur">
+        <div class="row">
+            <B_selection_carousel>
+            <div class="medium-3 column">
+                <h2 class="section__titre section__titre--offset">[(#ENV{titre,<:actualites:>})]</h2>
+            </div>
+            <div class="medium-6 column orbit-accueil">
+                <ul id="orbit-selection" class="orbit-selection" data-orbit data-options="navigation_arrows: false;">
+                    <BOUCLE_selection_carousel(ARTICLES pb_selection){par ordre}{spip_pb_selection.id_rubrique=0}{id_mot=1}{doublons}>
+                    <li data-orbit-slide="headline-#COMPTEUR_BOUCLE">
+                        <INCLURE{fond=inclure/article-resume,id_article} />
+                    </li>
+                    </BOUCLE_selection_carousel>
+                </ul>
+            </div>
+            </B_selection_carousel>
+            
+            [(#REM) Journee ]
+            <BOUCLE_journee(EVENEMENTS){statut=publie}{date_fin>=#ENV{date}}{par date_debut}{id_rubrique=7}{0,1}>
+            <div class="medium-3 column">
+                <article class="resume-journee">
+                    <h3 class="section__titre"><:info_journee_trt5:></h3>
+                    <BOUCLE_article_lie(ARTICLES){id_evenement}>
+                    <h2 class="hN resume-article__title entry-title"><a href="#URL_ARTICLE" rel="bookmark">#TITRE</a></h2>
+                    <div class="#EDIT{intro} resume-article__desc resume-journee__desc introduction entry-content">
+                        <p>[<strong>(#DATE_DEBUT|affdate)</strong>]</p>
+                        <BOUCLE_inscription(MOTS){id_article}{id_mot=9}>
+                        <a href="#URL_ARTICLE" class="button expand button--journee"><:info_inscrire:></a>
+                        </BOUCLE_inscription>
+                    </div>
+                    </BOUCLE_article_lie>
+                </article>
+            </div>
+            </BOUCLE_journee>
+        </div><!-- /.row -->
+    </div><!-- /.groupe -->
+
+    [(#REM) Derniers articles ]
+    <div class="group--mineur">
+        <div class="row">
+            #SET{articles_selection,#ARRAY}
+            <B_articles>
+            <BOUCLE_articles(ARTICLES pb_selection){lang}{par ordre}{spip_pb_selection.id_rubrique=0}{doublons}>
+                [(#SET{articles_selection,#GET{articles_selection}|push{#ID_ARTICLE}})]
+            </BOUCLE_articles>
+                <INCLURE{fond=liste/articles-resume,env,selection=#GET{articles_selection},ajax,titre=<:articles_tous:>} />
+            </B_articles><//B_articles>
+        </div><!-- /.row -->
+    </div><!-- /.groupe -->
+</div><!-- /.content-principal -->

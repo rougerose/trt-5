@@ -32,9 +32,13 @@
         </B_selection>
 
         [(#REM) Les articles de la rubrique, sinon les sous-rubriques ]
-        <BOUCLE_articles(ARTICLES){id_rubrique}{0,1}>
-            <INCLURE{fond=liste/articles-resume,env,ajax,titre=<:articles_tous:>} />
+        #SET{articles_rubrique,#ARRAY}
+        <B_articles>
+        <BOUCLE_articles(ARTICLES){id_rubrique}{!par date}>
+            [(#SET{articles_rubrique,#GET{articles_rubrique}|push{#ID_ARTICLE}})]
         </BOUCLE_articles>
+            <INCLURE{fond=liste/articles-resume,env,selection=#GET{articles_rubrique},ajax,titre=<:articles_tous:>} />
+        </B_articles>
         <BOUCLE_sous_rubriques(RUBRIQUES){id_parent}>
             <INCLURE{fond=liste/rubriques-resume,id_rubrique} />
         </BOUCLE_sous_rubriques>

@@ -12,11 +12,27 @@
    #ORBIT-ACCUEIL
    ========================================================================== */
 .orbit-accueil {
-    background: $color-1;
     .orbit-container {
         .orbit-timer {top: 0;}
     }
+    .orbit-bullets {
+        text-align: left;
+        > li {
+            background: #fff;
+            border: 2px solid $color-1;
+            &.active,
+            &:hover {
+                background: $color-1;
+            }
+        }
+    }
 }
+
+.orbit-accueil--about {
+    background: $color-1;
+    margin-bottom: 4em;
+}
+
     .orbit-accueil__nav {
         padding: 1em .5em;
         font-family: $font-reg;

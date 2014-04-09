@@ -16,6 +16,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
     'home' => "Accueil",
 
     // I
+    'info_inscrire' => "S'inscrire",
+    'info_journee_trt5' => "Journée annuelle du TRT-5",
     'info_mots' => "Mots-clés",
     'info_partagez' => "Partagez",
     'info_ps' => "Post-scriptum",

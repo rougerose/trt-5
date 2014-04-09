@@ -7,9 +7,8 @@
    ========================================================================== */
 // .resume-article {}
 .resume-article__title {
-    font-size: rem-calc(16);
+    font-size: rem-calc(18);
     font-weight: bold;
-    // font-style: italic;
     a {
       color: #000;
       &:hover {
@@ -46,3 +45,31 @@
     text-align: center;
     font-style: italic;
 }
+
+/* 
+   #RESUME-JOURNEE
+   ========================================================================== */
+.resume-journee {
+  background-color: $color-3;
+  padding: 0.5em 0.5em 0;
+  margin-top: -0.3em;
+  .section__titre {
+    font-family: $font-bold;
+    font-size: rem-calc(14);
+    color: #fff;
+  }
+  .resume-article__title {
+    a:hover {color: #fff;}
+  }
+}
+.resume-journee__desc {
+  p {
+    font-size: rem-calc(18);
+    color: #fff;
+  }
+}
+.journee__date {
+  color: #fff;
+  font-size: rem-calc(18);
+}
+

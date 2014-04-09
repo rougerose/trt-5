@@ -1,0 +1,16 @@
+/* ==========================================================================
+   #BUTTON
+   ========================================================================== */
+
+
+.button--journee {
+    padding: .5em 0;
+    background: none;
+    border: 2px solid #fff;
+    font-family: $font-bold;
+    text-transform: uppercase;
+    &:hover {
+        background: rgba(#fff,0.35);
+    }
+}
+
