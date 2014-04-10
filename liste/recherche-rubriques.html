@@ -1,0 +1,21 @@
+<B_rubriques>
+<div class="liste resume rubriques recherche clearfix group--recherche">
+    #ANCRE_PAGINATION
+    <div class="medium-3 columns">
+        <h2 class="section__titre section__titre--offset">[(#GRAND_TOTAL|singulier_ou_pluriel{local:info_recherche_rubrique,local:info_recherche_rubriques,nb})]</h2>
+    </div>
+    <div class="medium-9 columns">
+        <ul class="list medium-block-grid-3">
+            <BOUCLE_rubriques(RUBRIQUES){id_rubrique IN #ENV{selection}}{pagination #ENV{nb,10}}>
+            <li class="list__item hentry">
+                <article class="resume-rubrique resume-recherche">
+                    <h2 class="hN resume-recherche__title"><a href="#URL_RUBRIQUE">#TITRE</a></h2>
+                    [<div class="#EDIT{intro} resume-recherche__desc introduction">(#INTRODUCTION|couper{160}|paragrapher)</div>]
+                </article>
+            </li>
+            </BOUCLE_rubriques>
+        </ul>
+        [<nav class="pagination">(#PAGINATION)</nav>]
+    </div>
+</div>
+</B_rubriques>

@@ -20,6 +20,12 @@
             font-size: rem-calc(13);
             font-weight: bold;
             line-height: 1.2;
+            a {
+                color: #000;
+                &:hover {
+                    color: $color-1;
+                }
+            }
         }
         .doc__desc {
             font-size: rem-calc(13);

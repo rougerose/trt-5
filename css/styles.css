@@ -5708,6 +5708,9 @@ h6.spip {
 .group--mineur {
   margin-bottom: 2em; }
 
+.group--recherche {
+  margin-bottom: 3em; }
+
 @media only screen and (max-width: 40em) {
   [class*="block-grid-"] > li {
     padding-left: 0;
@@ -5853,6 +5856,10 @@ h6.spip {
   font-size: 0.8125rem;
   font-weight: bold;
   line-height: 1.2; }
+  .doc__title a {
+    color: #000; }
+    .doc__title a:hover {
+      color: #d52b1e; }
 
 .doc__desc {
   font-size: 0.8125rem;
@@ -5935,6 +5942,21 @@ h6.spip {
 .resume-membres [class*="block-grid-"] > li {
   padding-bottom: 0;
   font-family: "Dinreg", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/* 
+   #RESUME-RECHERCHE
+   ========================================================================== */
+.resume-recherche__title {
+  font-family: "PT Serif", "Gentium Book Basic", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 1.125rem;
+  font-weight: bold; }
+  .resume-recherche__title a {
+    color: #000; }
+    .resume-recherche__title a:hover {
+      color: #d52b1e; }
+
+.resume-recherche__desc p {
+  font-size: 1rem; }
 
 /* ==========================================================================
    #ORBIT
@@ -6108,6 +6130,11 @@ h6.spip {
 
 .self-rubrique__texte p {
   font-size: 1.25rem; }
+
+.resultats--total {
+  font-weight: bold;
+  font-size: 1.125rem;
+  color: #d52b1e; }
 
 /* 
    #MEDIA-QUERIES

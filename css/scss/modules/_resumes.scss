@@ -93,4 +93,22 @@
   }
 }
 
-
+/* 
+   #RESUME-RECHERCHE
+   ========================================================================== */
+.resume-recherche__title {
+  font-family: $serif;
+  font-size: rem-calc(18);
+  font-weight: bold;
+  a {
+    color: #000;
+    &:hover {
+      color: $color-1;
+    }
+  }
+}
+.resume-recherche__desc {
+  p {
+      font-size: rem-calc(16);
+    }
+}

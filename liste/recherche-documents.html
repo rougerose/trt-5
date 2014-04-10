@@ -1,0 +1,38 @@
+[(#REM)
+   Variables
+   ----------------------------------------------
+   selection : tableau de la sélection transmis par inclure
+   url_doc : url du document
+] #SET{selection,#ENV{selection}} #SET{url_doc,''}
+
+<B_documents>
+<div class="liste resume documents recherche clearfix group--recherche">
+    #ANCRE_PAGINATION
+    <div class="medium-3 columns">
+        <h2 class="section__titre section__titre--offset">[(#GRAND_TOTAL|singulier_ou_pluriel{local:info_recherche_document,local:info_recherche_documents,nb})]</h2>
+    </div>
+    <div class="medium-9 columns docs">
+        <ul class="list medium-block-grid-3">
+            <BOUCLE_documents(DOCUMENTS){id_document IN #GET{selection}}{pagination #ENV{nb,10}}>
+            [(#REM) documents article : calcul de l'url ]
+            <BOUCLE_lien_article(documents_liens){id_document}{objet=article}>[
+               (#SET{url_doc, #INFO_URL{article,#ID_OBJET}|ancre_url{docs}})
+            ]</BOUCLE_lien_article>
+            <li class="list__item hentry medias">
+               <figure class="doc fichier clearfix">
+                  [(#LOGO_DOCUMENT{vignette}|?{
+                     [<a href="[(#GET{url_doc})]" class="">(#LOGO_DOCUMENT|image_reduire{52,0}|inserer_attribut{class,doc__img})</a>],
+                     [<a href="[(#GET{url_doc})]" class="">(#LOGO_DOCUMENT|image_reduire{52,0}|inserer_attribut{class,doc__img})</a>]
+                  })]
+                  <figcaption class="doc__body spip_doc_legende">
+                     <h2 class="spip_doc_titre doc__title"><a href="[(#GET{url_doc})]" title="<:bouton_telecharger:>" type="#MIME_TYPE">[(#TITRE|sinon{<:medias:info_document:>})]</a></h2>
+                     <p class="spip_doc_descriptif doc__desc">[(#DESCRIPTIF|PtoBR)<br />]<span class="media-info">#TYPE_DOCUMENT[ &ndash; (#TAILLE|taille_en_octets)]</span></p>
+                  </figcaption>
+               </figure>
+            </li>
+            </BOUCLE_documents>
+        </ul>
+        [<nav class="pagination">(#PAGINATION)</nav>]
+    </div>
+</div>
+</B_documents>

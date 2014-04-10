@@ -1,0 +1,18 @@
+<B_articles>
+<div class="liste resume articles recherche clearfix group--recherche">
+    #ANCRE_PAGINATION
+    <div class="medium-3 columns">
+        <h2 class="section__titre section__titre--offset">[(#GRAND_TOTAL|singulier_ou_pluriel{local:info_recherche_article,local:info_recherche_articles,nb})]</h2>
+    </div>
+    <div class="medium-9 columns">
+        <ul class="list medium-block-grid-3">
+            <BOUCLE_articles(ARTICLES){id_article IN #ENV{selection}}{pagination #ENV{nb,10}}>
+            <li class="list__item hentry">
+                #INCLURE{fond=inclure/article-resume,id_article}
+            </li>
+            </BOUCLE_articles>
+        </ul>
+        [<nav class="pagination">(#PAGINATION)</nav>]
+    </div>
+</div>
+</B_articles>
