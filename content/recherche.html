@@ -42,10 +42,8 @@
     <nav class="breadcrumb-nav medium-9 medium-offset-3 column">
         <ul class="breadcrumb">
             <li class="breadcrumb__item"><a href="#URL_SITE_SPIP/"><:accueil_site:></a></li>
-            <BOUCLE_ariane(HIERARCHIE){id_article}>
-            <li class="breadcrumb__item"><a href="#URL_RUBRIQUE">[(#TITRE|couper{40})]</a></li>
-            </BOUCLE_ariane>
-            [<li class="breadcrumb__item breadcrumb__item--is-active">(#TITRE|couper{40})</li>]
+            <li class="breadcrumb__item breadcrumb__item--is-active"><:info_rechercher:></li>
+            [<li class="breadcrumb__item breadcrumb__item--is-active">(#ENV{recherche})</li>]
         </ul>
     </nav>
 </div>
