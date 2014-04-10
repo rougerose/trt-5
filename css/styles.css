@@ -5543,6 +5543,53 @@ h6.spip {
   color: #adafaf; }
 
 /* ==========================================================================
+   #FORMS
+   ========================================================================== */
+/* 
+   recherche
+   ========================================================================== */
+#formulaire_recherche {
+  float: left;
+  margin-right: 1em; }
+
+.search__form {
+  position: relative; }
+  .search__form ::-webkit-input-placeholder {
+    text-transform: uppercase;
+    color: #adafaf; }
+  .search__form :-moz-placeholder {
+    text-transform: uppercase;
+    color: #adafaf; }
+  .search__form ::-moz-placeholder {
+    text-transform: uppercase;
+    color: #adafaf;
+    /* Firefox 19+ */ }
+  .search__form :-ms-input-placeholder {
+    text-transform: uppercase;
+    color: #adafaf; }
+
+.search__label {
+  position: absolute;
+  text-indent: -9999px; }
+
+.search__field {
+  width: 7em;
+  padding: 0;
+  border: 0;
+  font-family: "Dinbold", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.search__submit {
+  border: 0;
+  padding: 0 .3em;
+  background: #fff;
+  color: #e1e1e1;
+  font-family: "Dinbold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase; }
+  .search__submit:hover {
+    background: #d52b1e;
+    color: #fff; }
+
+/* ==========================================================================
    #HEADER
    ========================================================================== */
 .header {
@@ -5638,6 +5685,8 @@ h6.spip {
   position: absolute;
   right: 0;
   top: 0; }
+  .site-nav-open .fa-lg {
+    line-height: 1em; }
 
 /* ==========================================================================
    #FOOTER
