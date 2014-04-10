@@ -5,7 +5,25 @@
 .footer {
     border-top: 2px solid $color-1;
     padding: 2em 0;
-    p {
-        font-size: rem-calc(14);
+    p,
+    .list__item {
+        font-size: rem-calc(15);
+    }
+}
+
+.liens-utiles {
+    margin-top: 2em;
+    margin-bottom: 0;
+    a {
+        display: inline-block;
+        border-bottom: 0;
+        margin-right: 3em;
+        font-family: $font-reg;
+        font-size: rem-calc(13);
+        text-transform: uppercase;
+        color: #000;
+        &:hover {
+            color: $color-1;
+        }
     }
 }

@@ -5694,8 +5694,23 @@ h6.spip {
 .footer {
   border-top: 2px solid #d52b1e;
   padding: 2em 0; }
-  .footer p {
-    font-size: 0.875rem; }
+  .footer p,
+  .footer .list__item {
+    font-size: 0.9375rem; }
+
+.liens-utiles {
+  margin-top: 2em;
+  margin-bottom: 0; }
+  .liens-utiles a {
+    display: inline-block;
+    border-bottom: 0;
+    margin-right: 3em;
+    font-family: "Dinreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    color: #000; }
+    .liens-utiles a:hover {
+      color: #d52b1e; }
 
 /* ==========================================================================
    #GROUP

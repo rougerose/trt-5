@@ -18,3 +18,18 @@
     </div><!-- /.medium-6 column -->
     </BOUCLE_rubrique_TRT5>
 </div><!-- /.row -->
+<div class="row">
+    <div class="column">
+        <p class="liens-utiles">
+            <BOUCLE_contact(ARTICLES){page=contact}>
+            <a href="#URL_ARTICLE">#TITRE</a>
+            </BOUCLE_contact>
+            <BOUCLE_site(ARTICLES){page=site_about}>
+            <a href="#URL_ARTICLE">#TITRE</a>
+            </BOUCLE_site>
+            <BOUCLE_avertissements(ARTICLES){page=avertissements}>
+            <a href="#URL_ARTICLE">#TITRE</a>
+            </BOUCLE_avertissements>
+        </p>
+    </div><!-- /.column -->
+</div><!-- /.row -->
