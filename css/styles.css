@@ -5640,6 +5640,30 @@ h6.spip {
   top: 0; }
 
 /* ==========================================================================
+   #FOOTER
+   ========================================================================== */
+.footer {
+  border-top: 2px solid #d52b1e;
+  padding: 2em 0; }
+  .footer p {
+    font-size: 0.875rem; }
+
+/* ==========================================================================
+   #GROUP
+   ========================================================================== */
+.group--majeur {
+  border-bottom: 2px solid #d52b1e;
+  margin-bottom: 2em;
+  padding-bottom: 1em; }
+
+.group--mineur {
+  margin-bottom: 2em; }
+
+@media only screen and (max-width: 40em) {
+  [class*="block-grid-"] > li {
+    padding-left: 0;
+    padding-right: 0; } }
+/* ==========================================================================
    #LISTS
    ========================================================================== */
 /* 
@@ -5668,14 +5692,6 @@ h6.spip {
    ========================================================================== */
 .lang-list__item {
   color: #adafaf; }
-
-/* ==========================================================================
-   #GROUP
-   ========================================================================== */
-.group--majeur {
-  border-bottom: 2px solid #d52b1e;
-  margin-bottom: 2em;
-  padding-bottom: 1em; }
 
 /* ==========================================================================
    #ASIDE
@@ -5840,6 +5856,19 @@ h6.spip {
   color: #fff;
   font-size: 1.125rem; }
 
+/* 
+   #RESUME-ABOUT #RESUME-MEMBRES
+   ========================================================================== */
+.resume-about__title,
+.resume-membres__title {
+  font-size: 1rem;
+  font-family: "Dinbold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase; }
+
+.resume-membres [class*="block-grid-"] > li {
+  padding-bottom: 0;
+  font-family: "Dinreg", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
 /* ==========================================================================
    #ORBIT
    ========================================================================== */
@@ -5851,8 +5880,14 @@ h6.spip {
 /* 
    #ORBIT-ACCUEIL
    ========================================================================== */
-.orbit-accueil .orbit-container .orbit-timer {
-  top: 0; }
+.orbit-accueil .orbit-container {
+  padding-top: 1em; }
+  .orbit-accueil .orbit-container .orbit-timer {
+    top: 0; }
+.orbit-accueil .orbit-timer span {
+  border-color: #d52b1e; }
+.orbit-accueil .orbit-timer .orbit-progress {
+  background-color: rgba(213, 43, 30, 0.3); }
 .orbit-accueil .orbit-bullets {
   text-align: left; }
   .orbit-accueil .orbit-bullets > li {
@@ -5915,25 +5950,6 @@ h6.spip {
 .orbit-accueil__content .article__desc p {
   color: #fff; }
 
-@media only screen and (max-width: 40em) {
-  .orbit-accueil__nav {
-    background-color: #bf261b; } }
-@media only screen and (min-width: 40.063em) {
-  .orbit-accueil__nav {
-    padding-top: 1.7em;
-    background-color: none; }
-    .orbit-accueil__nav > a {
-      float: none;
-      width: auto; }
-
-  .orbit-accueil__title {
-    padding: .7em 0 0;
-    text-align: left; }
-
-  .orbit-accueil__content .article-resume {
-    padding: 0; }
-  .orbit-accueil__content .article__title {
-    text-align: left; } }
 /* 
    #ORBIT-RUBRIQUE
    ========================================================================== */
@@ -5957,6 +5973,31 @@ h6.spip {
 .orbit-rubrique .meta {
   color: #fff; }
 
+@media only screen and (max-width: 40em) {
+  .orbit-accueil {
+    margin-bottom: 2em; }
+
+  .orbit-accueil__nav {
+    background-color: #bf261b; }
+
+  .resume-journee {
+    margin-bottom: 2em; } }
+@media only screen and (min-width: 40.063em) {
+  .orbit-accueil__nav {
+    padding-top: 1.7em;
+    background-color: none; }
+    .orbit-accueil__nav > a {
+      float: none;
+      width: auto; }
+
+  .orbit-accueil__title {
+    padding: .7em 0 0;
+    text-align: left; }
+
+  .orbit-accueil__content .article-resume {
+    padding: 0; }
+  .orbit-accueil__content .article__title {
+    text-align: left; } }
 /* ==========================================================================
    #SELF
    ========================================================================== */

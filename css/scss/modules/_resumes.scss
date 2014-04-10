@@ -73,3 +73,24 @@
   font-size: rem-calc(18);
 }
 
+/* 
+   #RESUME-ABOUT #RESUME-MEMBRES
+   ========================================================================== */
+
+// .resume-about {}
+.resume-about__title,
+.resume-membres__title {
+  font-size: rem-calc(16);
+  font-family: $font-bold;
+  text-transform: uppercase;
+}
+// .resume-about__desc {}
+
+.resume-membres {
+  [class*="block-grid-"] > li {
+    padding-bottom: 0;
+    font-family: $font-reg;
+  }
+}
+
+

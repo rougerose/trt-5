@@ -41,7 +41,7 @@
             <div class="medium-3 column">
                 <h2 class="section__titre section__titre--offset">[(#ENV{titre,<:actualites:>})]</h2>
             </div>
-            <div class="medium-6 column orbit-accueil">
+            <div class="medium-6 column orbit-accueil left">
                 <ul id="orbit-selection" class="orbit-selection" data-orbit data-options="navigation_arrows: false;">
                     <BOUCLE_selection_carousel(ARTICLES pb_selection){par ordre}{spip_pb_selection.id_rubrique=0}{id_mot=1}{doublons}>
                     <li data-orbit-slide="headline-#COMPTEUR_BOUCLE">
@@ -84,4 +84,12 @@
             </B_articles><//B_articles>
         </div><!-- /.row -->
     </div><!-- /.groupe -->
+    <div class="row">
+        [(#REM) Fil d'Ariane ]
+        <nav class="breadcrumb-nav medium-9 medium-offset-3 column">
+            <ul class="breadcrumb">
+                <li class="breadcrumb__item"><a href="#URL_SITE_SPIP/"><:accueil_site:></a></li>
+            </ul>
+        </nav>
+    </div><!-- /.row -->
 </div><!-- /.content-principal -->

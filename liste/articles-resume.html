@@ -5,9 +5,9 @@
         <h2 class="section__titre section__titre--offset">[(#ENV{titre,<:derniers_articles:>})]</h2>
     </div>
     <div class="medium-9 columns">
-        <ul class="liste-items medium-block-grid-3">
+        <ul class="list medium-block-grid-3">
             <BOUCLE_articles(ARTICLES){id_article IN #ENV{selection}}{pagination #ENV{nb,5}}>
-            <li class="item hentry">
+            <li class="list__item hentry">
                 #INCLURE{fond=inclure/article-resume,id_article}
             </li>
             </BOUCLE_articles>
