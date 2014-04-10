@@ -1,5 +1,0 @@
- ☐ page d'accueil : 
-     ☐ premier carousel : sélection se fait sur la rubrique qui est liée au mot-clé "@présentation trt5" (id 63), puis ensuite les articles de la rubrique sont affichés dans le carousel.
-     ☐ second carousel : Les articles qui sont en sélection de la rubrique 0 + liés au mot-clé "@carrousel actualités (page d’accueil)" (id 1).
-     ☐ journée TRT-5 : affiche un événement attaché à un article publié dans la rubrique Journée (id 7) dont la date de fin d'événement est égale ou postérieure à la date du jour. Si l'article est lié au mot-clé Journée > s'inscrire (id 9) : le bouton "s'inscrire" est ajouté. 
-     ☐ groupe Derniers articles : Tous les articles en sélection. 
