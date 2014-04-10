@@ -1,0 +1,50 @@
+<BOUCLE_content(MOTS){id_mot}>
+[(#REM) constantes ]
+    [(#SET{total,''})] #SET{articles, #ARRAY} #SET{rubriques, #ARRAY} #SET{documents, #ARRAY}
+    <BOUCLE_articles(ARTICLES){id_mot}>
+    [(#SET{articles,#GET{articles}|push{#ID_ARTICLE}})]</BOUCLE_articles>
+    <BOUCLE_rubriques(RUBRIQUES){id_mot}>
+    [(#SET{rubriques,#GET{rubriques}|push{#ID_RUBRIQUE}})]</BOUCLE_rubriques>
+    <BOUCLE_documents(DOCUMENTS){id_mot}{vu=non}>[(#SET{documents,#GET{documents}|push{#ID_DOCUMENT}})]</BOUCLE_documents>
+    [(#SET{total,#GET{articles}|count
+        |plus{#GET{rubriques}|count}
+        |plus{#GET{documents}|count}})]
+<div class="row">
+    <article class="self self-mot clearfix content-principal">
+        <header class="self__header">
+            <div class="self__title medium-9 medium-offset-3 column">
+                <h1 class="hN">
+                    <span class="#EDIT{titre} titre">#TITRE</span>
+                </h1>
+            </div>
+        </header>
+        <div class="self__body medium-9 column">
+            [<section class="#EDIT{texte} texte surlignable self-article__texte">
+                (#TEXTE|image_reduire{500,0})
+            </section>]
+            [<section class="notes">
+                <h2 class="section__titre section__titre--body"><:info_notes:></h2>
+                (#NOTES)
+            </section>]
+        </div>
+        [(#GET{total}|>{0}|oui)
+        <div class="self__body">
+            [(#GET{articles}|count|>{0}|oui)
+                [(#INCLURE{fond=liste/recherche-articles,selection=#GET{articles},nb=6,env,ajax})]
+            ][(#GET{rubriques}|count|>{0}|oui)
+                [(#INCLURE{fond=liste/recherche-rubriques,selection=#GET{rubriques},env,ajax})]
+            ][(#GET{documents}|count|>{0}|oui)
+                [(#INCLURE{fond=liste/recherche-documents,selection=#GET{documents},env,ajax})]
+            ]
+        </div>]
+    </article>
+
+    [(#REM) Fil d'Ariane ]
+    <nav class="breadcrumb-nav medium-9 medium-offset-3 column">
+        <ul class="breadcrumb">
+            <li class="breadcrumb__item"><a href="#URL_SITE_SPIP/"><:accueil_site:></a></li>
+            [<li class="breadcrumb__item breadcrumb__item--is-active">(#TITRE|couper{40})</li>]
+        </ul>
+    </nav>
+</div>
+</BOUCLE_content>
