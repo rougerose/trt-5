@@ -17,15 +17,15 @@
 .tag-list {
     @extend %bare-list;
 }
-    .tag-list__item {
-        &:before {
-            position: relative;
-            top: 1px;
-            margin-right: 0.25em;
-            content: "#";
-            color: lighten($color-2,20%);
-        }
-    }
+.tag-list__item {
+    &:before {
+      position: relative;
+      top: 1px;
+      margin-right: 0.25em;
+      content: "#";
+      color: lighten($color-2,20%);
+  }
+}
 
 /* 
    #LANG-LIST
@@ -34,9 +34,21 @@
 .lang-list {
     @extend %bare-list;
 }
-    .lang-list__item {
-        color: $color-2;
+.lang-list__item {
+    color: $color-2;
+}
+
+/* 
+   #MEMBRES-LIST
+   ========================================================================== */
+
+.membres-list__item {
+    margin-bottom: 2em;
+    .medias__img {
+        min-width: 150px;
     }
+}
+
 
 
 

@@ -26,6 +26,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
     'navigation' => "Navigation",
 
     // P
-    'par' => "Par"
+    'par' => "Par",
+
+    // S
+    'site_web' => "Site web"
 );
 ?>
