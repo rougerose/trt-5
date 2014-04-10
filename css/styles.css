@@ -6118,9 +6118,6 @@ h6.spip {
   .self__meta a:hover {
     color: #d52b1e; }
 
-.pres {
-  background-color: yellow; }
-
 /* 
    #SELF__HEADER
    ========================================================================== */
@@ -6130,6 +6127,9 @@ h6.spip {
   color: #000; }
 .self-article .self__title .hN {
   font-style: italic; }
+.self__title .soustitre {
+  display: block;
+  line-height: inherit; }
 
 /* 
    #SELF__BODY
