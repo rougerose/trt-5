@@ -2,6 +2,48 @@
    #FORMS
    ========================================================================== */
 
+label {
+    font-style: italic;
+}
+input.text, textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    &:focus {
+        border-color: #000;
+    }
+}
+fieldset {
+    margin-bottom: 1.5em;
+}
+form {
+    ul {
+        margin: 0;
+        list-style: none;
+        > li {
+            margin-bottom: 1.5em;
+        }
+    }
+}
+.boutons {
+    text-align: left;
+}
+.reponse_formulaire {
+    width: 50%;
+    padding: .2em .5em .1em;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+.reponse_formulaire_ok {
+    background: $success-color;
+}
+.reponse_formulaire_erreur {
+    background: $alert-color;
+}
+.erreur_message {
+    color: $warning-color;
+}
+
 /* 
    recherche
    ========================================================================== */
@@ -21,18 +63,16 @@
     text-indent: -9999px;
 }
 .search__field {
-    width: 7em;
     padding: 0;
-    // border: 1px solid #eee;
-    border: 0;
     font-family: $font-bold;
+    .search__form & {
+        width: 7em;
+        border: none;
+    }
 }
 .search__submit {
-    // border: 1px solid $color-1;
     border: 0;
-    // border-left-width: 0;
     padding: 0 .3em;
-    // background: $color-1;
     background: #fff;
     color: lighten($color-2,20%);
     font-family: $font-bold;
@@ -41,6 +81,35 @@
         background: $color-1;
         color: #fff;
     }
+}
+
+/* 
+   ecrire-auteur
+   ========================================================================== */
+.formulaire_ecrire_auteur {
+    .button {
+        background: #fff;
+        color: #777;
+        border: 1px solid #ddd;
+        text-transform: uppercase;
+        font-family: $font-bold;
+        font-size: rem-calc(14);
+        @include transition(all .25s ease);
+        &:hover {
+            border-color: #000;
+            color: #000;
+        }
+    }
+}
+.send-message__fieldset {
+    border-width: 0;
+    padding: 0;
+}
+.send-message__preview {
+    border-bottom: 1px solid #000;
+}
+.send-message__legend {
+    font-weight: normal;
 }
 
 

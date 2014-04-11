@@ -2482,11 +2482,11 @@ button, .button {
     button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
       color: #333333; }
   button.success, .button.success {
-    background-color: #43ac6a;
-    border-color: #368a55;
+    background-color: #22a207;
+    border-color: #1b8206;
     color: white; }
     button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
-      background-color: #368a55; }
+      background-color: #1b8206; }
     button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
       color: white; }
   button.alert, .button.alert {
@@ -2563,19 +2563,19 @@ button, .button {
       button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
         background-color: #e7e7e7; }
     button.disabled.success, button[disabled].success, .button.disabled.success, .button[disabled].success {
-      background-color: #43ac6a;
-      border-color: #368a55;
+      background-color: #22a207;
+      border-color: #1b8206;
       color: white;
       cursor: default;
       opacity: 0.7;
       -webkit-box-shadow: none;
       box-shadow: none; }
       button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
-        background-color: #368a55; }
+        background-color: #1b8206; }
       button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
         color: white; }
       button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
-        background-color: #43ac6a; }
+        background-color: #22a207; }
     button.disabled.alert, button[disabled].alert, .button.disabled.alert, .button[disabled].alert {
       background-color: #f04124;
       border-color: #cf2a0e;
@@ -3648,9 +3648,9 @@ meta.foundation-mq-topbar {
       .top-bar-section ul li > a.button.secondary:hover {
         background: #cecece; }
     .top-bar-section ul li > a.button.success {
-      background: #43ac6a; }
+      background: #22a207; }
       .top-bar-section ul li > a.button.success:hover {
-        background: #358854; }
+        background: #1b8006; }
     .top-bar-section ul li > a.button.alert {
       background: #f04124; }
       .top-bar-section ul li > a.button.alert:hover {
@@ -5545,6 +5545,43 @@ h6.spip {
 /* ==========================================================================
    #FORMS
    ========================================================================== */
+label {
+  font-style: italic; }
+
+input.text, textarea {
+  width: 100%;
+  border: 1px solid #ddd; }
+  input.text:focus, textarea:focus {
+    border-color: #000; }
+
+fieldset {
+  margin-bottom: 1.5em; }
+
+form ul {
+  margin: 0;
+  list-style: none; }
+  form ul > li {
+    margin-bottom: 1.5em; }
+
+.boutons {
+  text-align: left; }
+
+.reponse_formulaire {
+  width: 50%;
+  padding: .2em .5em .1em;
+  text-align: center;
+  font-weight: bold;
+  color: #fff; }
+
+.reponse_formulaire_ok {
+  background: #22a207; }
+
+.reponse_formulaire_erreur {
+  background: #f04124; }
+
+.erreur_message {
+  color: #f08a24; }
+
 /* 
    recherche
    ========================================================================== */
@@ -5573,10 +5610,11 @@ h6.spip {
   text-indent: -9999px; }
 
 .search__field {
-  width: 7em;
   padding: 0;
-  border: 0;
   font-family: "Dinbold", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .search__form .search__field {
+    width: 7em;
+    border: none; }
 
 .search__submit {
   border: 0;
@@ -5588,6 +5626,33 @@ h6.spip {
   .search__submit:hover {
     background: #d52b1e;
     color: #fff; }
+
+/* 
+   ecrire-auteur
+   ========================================================================== */
+.formulaire_ecrire_auteur .button {
+  background: #fff;
+  color: #777;
+  border: 1px solid #ddd;
+  text-transform: uppercase;
+  font-family: "Dinbold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease; }
+  .formulaire_ecrire_auteur .button:hover {
+    border-color: #000;
+    color: #000; }
+
+.send-message__fieldset {
+  border-width: 0;
+  padding: 0; }
+
+.send-message__preview {
+  border-bottom: 1px solid #000; }
+
+.send-message__legend {
+  font-weight: normal; }
 
 /* ==========================================================================
    #HEADER
