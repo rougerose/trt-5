@@ -36,7 +36,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
     'info_recherche_resultat'        => '1 résultat',
     'info_recherche_resultats'       => '@nb@ résultats',
     'info_recherche_pas_de_resultat' => 'Aucun résultat',
-    
+
+    // M
+    'message_404_title' => "Page indisponible.",
+    'message_404_desc'  => "La page que vous recherchez n’est pas disponible.<br />Revenir à <a href='@urlsite@' class='spip_in'>la page d'accueil du site</a>.",
     // N
     'navigation' => "Navigation",
 

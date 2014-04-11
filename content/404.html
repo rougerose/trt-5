@@ -1,0 +1,29 @@
+<div class="row">
+    <article class="self self-article clearfix content-principal">
+        <header class="self__header">
+            <div class="self__title medium-9 medium-offset-3 column">
+                <h1 class="hN">
+                    <span class="titre"><:pass_erreur:> 404</span>
+                </h1>
+            </div>
+        </header>
+        <div class="self__body medium-9 column right">
+            <section class="chapo">
+                [(#ENV{erreur})]
+                [(#ENV{erreur}|non)
+                <h2 class="hN spip"><:local:message_404_title:></h2>
+                <p class="spip"><:local:message_404_desc{urlsite=#URL_SITE_SPIP}:></p>
+                ]
+            </section>
+        </div>
+    </article>
+
+    [(#REM) Fil d'Ariane ]
+    <nav class="breadcrumb-nav medium-9 medium-offset-3 column">
+        <ul class="breadcrumb">
+            <li class="breadcrumb__item"><a href="#URL_SITE_SPIP/"><:accueil_site:></a></li>
+            <li class="breadcrumb__item breadcrumb__item--is-active"><:pass_erreur:> 404</li>
+        </ul>
+    </nav>
+</div>
+
