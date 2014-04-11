@@ -6251,6 +6251,11 @@ form ul {
 /* 
    #MEDIA-QUERIES
    ========================================================================== */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .self-article__texte,
+  .self-article .ps,
+  .self-article .notes {
+    padding-right: 2em; } }
 @media only screen and (min-width: 40.063em) {
   .self__title .hN {
     font-size: 2rem; }
@@ -6258,6 +6263,11 @@ form ul {
   .self__body .chapo p,
   .self__body .chapo li {
     font-size: 1.125rem; } }
+@media only screen and (min-width: 64.063em) {
+  .self-article .self-article__texte,
+  .self-article .ps,
+  .self-article .notes {
+    padding-right: 5em; } }
 /* ==========================================================================
    #SPIP-ADMIN
    ========================================================================== */

@@ -63,6 +63,7 @@
     }
 }
 
+
 .resultats--total {
     font-weight: bold;
     font-size: rem-calc(18);
@@ -72,6 +73,14 @@
 /* 
    #MEDIA-QUERIES
    ========================================================================== */
+
+@media #{$medium-only} {
+    .self-article__texte,
+    .self-article .ps,
+    .self-article .notes {
+        padding-right: 2em;
+    }
+}
 
 @media #{$medium-up} {
     .self__title {
@@ -85,6 +94,16 @@
             li {
                 font-size: rem-calc(18);
             }
+        }
+    }
+}
+
+@media #{$large-up} {
+    .self-article {
+        .self-article__texte,
+        .ps,
+        .notes {
+            padding-right: 5em;
         }
     }
 }
