@@ -16,6 +16,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
     'home' => "Accueil",
 
     // I
+    'info_inscrire' => "S'inscrire",
+    'info_journee_trt5' => "Journée annuelle du TRT-5",
+    'info_mots' => "Mots-clés",
+    'info_page' => "Page",
+    'info_partagez' => "Partagez",
+    'info_ps' => "Post-scriptum",
     'info_recherche_article'         => '1 article',
     'info_recherche_articles'        => '@nb@ articles',
     'info_recherche_document'        => '1 document',
@@ -30,11 +36,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
     'info_recherche_resultat'        => '1 résultat',
     'info_recherche_resultats'       => '@nb@ résultats',
     'info_recherche_pas_de_resultat' => 'Aucun résultat',
-    'info_inscrire' => "S'inscrire",
-    'info_journee_trt5' => "Journée annuelle du TRT-5",
-    'info_mots' => "Mots-clés",
-    'info_partagez' => "Partagez",
-    'info_ps' => "Post-scriptum",
     
     // N
     'navigation' => "Navigation",
