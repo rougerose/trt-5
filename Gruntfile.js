@@ -24,14 +24,11 @@ module.exports = function(grunt) {
         }
       }
     },
-    concat: {
-      options: {
-        separator: ';'
-      },
-      dev: {
+    uglify: {
+      dist: {
         files: {
-          'js/public-head.js': ['bower_components/modernizr/modernizr.js'],
-          'js/lib-body.js': ['bower_components/foundation/js/foundation.js']
+          'js/foundation/foundation.min.js':'bower_components/foundation/js/foundation/foundation.js',
+          'js/foundation/foundation.offcanvas.min.js':'bower_components/foundation/js/foundation/foundation.offcanvas.js'
         }
       }
     },
@@ -45,10 +42,12 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // grunt.registerTask('dist', ['sass:dist','concat:dev']);
-  grunt.registerTask('dev', ['sass:dev','concat:dev']);
+  grunt.registerTask('compile', ['uglify:dist']);
+  grunt.registerTask('dist', ['sass:dist']);
+  grunt.registerTask('dev', ['sass:dev']);
   grunt.registerTask('default', ['dev','watch']);
 }

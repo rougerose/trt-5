@@ -7,8 +7,9 @@ $(function() {
     // ======================================
     // http://foundation.zurb.com/forum/posts/417-orbit-jumps-around-on-load
     //$("#orbit-selection","#orbit-trt5").hide(0).fadeIn(10000);
+    $(document).foundation();
 
-    $(document).foundation({
+    //$(document).foundation({
         // orbit: {
         //     timer_speed: 10000,
         //     slide_number: false,
@@ -16,5 +17,5 @@ $(function() {
         //     pause_on_hover: false,
         //     animation_speed: 500
         // }
-    });
+    //});
 });
