@@ -4,19 +4,15 @@
         <nav class="site-nav-container right-off-canvas-menu">
             <INCLURE{fond=inclure/site-nav,env} />
         </nav>
-        <div class="row">
-            <div class="column">
-                <header class="header" role="banner">
-                    <INCLURE{fond=header/#ENV{type-page},env} />
-                </header><!-- /.header -->
-                <div class="main" role="main">
-                    <INCLURE{fond=content/#ENV{type-page},env} />
-                </div><!-- /.main -->
-                <footer class="footer">
-                    <INCLURE{fond=footer/#ENV{type-page},env} />
-                </footer><!-- /.footer -->
-            </div><!-- /.column -->
-        </div><!-- /.row -->
+        <header class="header" role="banner">
+            <INCLURE{fond=header/#ENV{type-page},env} />
+        </header><!-- /.header -->
+        <div class="main" role="main">
+            <INCLURE{fond=content/#ENV{type-page},env} />
+        </div><!-- /.main -->
+        <footer class="footer">
+            <INCLURE{fond=footer/#ENV{type-page},env} />
+        </footer><!-- /.footer -->
         <a class="exit-off-canvas"></a>
       </div>
     </div>

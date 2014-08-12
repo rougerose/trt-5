@@ -9,12 +9,12 @@ $(function() {
     //$("#orbit-selection","#orbit-trt5").hide(0).fadeIn(10000);
 
     $(document).foundation({
-        orbit: {
-            timer_speed: 10000,
-            slide_number: false,
-            slide_selector: 'li',
-            pause_on_hover: false,
-            animation_speed: 500
-        }
+        // orbit: {
+        //     timer_speed: 10000,
+        //     slide_number: false,
+        //     slide_selector: 'li',
+        //     pause_on_hover: false,
+        //     animation_speed: 500
+        // }
     });
 });

@@ -3,31 +3,37 @@
    ========================================================================== */
 .header {
     position: relative;
-    margin-top: 2em;
-    margin-bottom: 3em;
-    padding-bottom: 1em;
+    padding: 4em 0 2em;
     border-bottom: 2px solid $color-1;
+    background-color: #fff;    
 }
-    .site-logo {
-        display:block;
-    }
-    .slogan {
-        margin-top: 1em;
-        font-family: 'dinmed';
-        text-transform: uppercase;
-        color: $black;
-        .slogan-item1 {display: block;}
-        .slogan-item2 {color: $color-1;}
-        .slogan-item3 {color: $color-2;}
-    }
-
+.slogan {
+    text-align: center;
+    font-family: 'dinmed';
+    text-transform: uppercase;
+    color: $black;
+    .slogan-item1 {display: block;}
+    .slogan-item2 {color: $color-1;}
+    .slogan-item3 {color: $color-2;}
+}
+.slogan-container {position:inherit;}
+.site-logo {
+    display: block;
+    width: 60%;
+    margin: 0 auto 1.5em;
+}
 @media #{$medium-up} {
-    .slogan-container {
-        position: inherit;
+    .header {
+        padding-top: 2em;
     }
+    .site-logo {
+        width: 100%;
+        margin: 0;
+    }
+    .slogan-container {position: inherit;}
     .slogan {
         position: absolute;
-        bottom: 1em;
-        font-size: rem-calc(18);
+        bottom: 2em;
+        text-align: left;
     }
 }
