@@ -20,9 +20,9 @@
             </div>
         </div><!-- /.row -->
 
+        <B_selection_carousel>
         <div class="row">
             [(#REM) Les sélections, si elles existent ]
-            <B_selection_carousel>
             <section class="group clearfix">
                 <div class="medium-9 medium-offset-3 column">
                     <div id="carouselActus" class="owl-carousel carousel-actus">
@@ -34,22 +34,24 @@
                     </div><!-- /.carousel-actus -->
                 </div>
             </section><!-- /.group -->
-            </B_selection_carousel>
         </div><!-- /.row -->
+        </B_selection_carousel>
 
         [(#REM) Les articles de la rubrique, sinon les sous-rubriques ]
         #SET{articles_rubrique,#ARRAY}
         <B_articles>
-        <div class="row">
             <BOUCLE_articles(ARTICLES){id_rubrique}{!par date}>
                 [(#SET{articles_rubrique,#GET{articles_rubrique}|push{#ID_ARTICLE}})]
             </BOUCLE_articles>
+            <div class="row">
                 <INCLURE{fond=liste/articles-resume,env,selection=#GET{articles_rubrique},ajax,titre=<:articles_tous:>} />
-            </B_articles>
-            <BOUCLE_sous_rubriques(RUBRIQUES){id_parent}>
-                <INCLURE{fond=liste/rubriques-resume,id_rubrique} />
-            </BOUCLE_sous_rubriques>
-        </div><!-- /.row -->
+            </div><!-- /.row -->
+        </B_articles>
+            <div class="row">
+                <BOUCLE_sous_rubriques(RUBRIQUES){id_parent}>
+                    <INCLURE{fond=liste/rubriques-resume,id_rubrique} />
+                </BOUCLE_sous_rubriques>
+            </div><!-- /.row -->
         <//B_articles>
     </article>
 
