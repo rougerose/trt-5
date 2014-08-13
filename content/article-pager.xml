@@ -1,0 +1,5 @@
+<composition>
+    <nom>Article avec navigation précédent/suivant</nom>
+    <description>Composition d'article avec navigation précédent/suivant</description>
+    <icon>images/objet-liste-contenus.png</icon>
+</composition>

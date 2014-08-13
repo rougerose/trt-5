@@ -3220,8 +3220,7 @@ form ul {
 /* ==========================================================================
    #GROUP
    ========================================================================== */
-.group,
-.groupe {
+.group {
   margin-bottom: 2em; }
 
 .group--majeur {
@@ -3565,6 +3564,57 @@ form ul {
     color: #fff;
     background-color: #d52b1e; }
 
+/* ==========================================================================
+   .pager
+   ========================================================================== */
+.pager__item-child {
+  display: block; }
+
+.pager-label {
+  font-family: "dinreg", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  border-bottom: 1px solid #000;
+  text-transform: uppercase;
+  color: #d52b1e;
+  -webkit-transition: color 0.3s ease-out, border 0.3s ease-out;
+  -moz-transition: color 0.3s ease-out, border 0.3s ease-out;
+  transition: color 0.3s ease-out, border 0.3s ease-out; }
+  a:hover .pager-label {
+    color: #000; }
+
+.pager-title {
+  margin-top: .3em;
+  -webkit-transition: color 0.3s ease-out;
+  -moz-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out; }
+  a:hover .pager-title {
+    color: #000; }
+
+.label--is-disabled, .label--is-disabled:hover {
+  color: #ccc;
+  border-bottom-color: #ccc; }
+
+.label--previous:before {
+  content: '\2190';
+  margin-right: .5em;
+  display: inline-block; }
+
+.label--next:after {
+  content: '\2192';
+  display: inline-block;
+  margin-left: .5em; }
+
+@media only screen and (min-width: 40.063em) {
+  .pager__item {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top; }
+
+  .label--next, .label--next + span {
+    margin-left: 5%;
+    text-align: right; }
+
+  .label--previous, .label--previous + span {
+    margin-right: 5%; } }
 /* ==========================================================================
    #SELF
    ========================================================================== */

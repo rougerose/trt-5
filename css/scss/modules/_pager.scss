@@ -1,0 +1,64 @@
+/* ==========================================================================
+   .pager
+   ========================================================================== */
+
+// .pager {}
+.pager__item {}
+.pager__item-child {display: block;}
+.pager-label {
+    font-family: $font-reg;
+    border-bottom: 1px solid #000;
+    text-transform: uppercase;
+    color: $couleur-1;
+    @include transition(color .3s ease-out,border .3s ease-out);
+    a:hover & {
+        color: #000;
+    }
+}
+.pager-title {
+    margin-top: .3em;
+    @include transition(color .3s ease-out);
+    a:hover & {
+        color: #000;
+    }
+}
+.label--is-disabled {
+    &,&:hover {
+        color: #ccc;
+        border-bottom-color: #ccc;
+    }
+}
+.label--previous {
+    &:before {
+        content: '\2190';
+        margin-right: .5em;
+        display: inline-block;
+    }
+}
+.label--next {
+    &:after {
+        content:'\2192';
+        display: inline-block;
+        margin-left: .5em;
+    }
+}
+@media #{$medium-up} {
+    .pager__item {
+        width: 50%;
+        display:inline-block;
+        vertical-align:top;
+    }
+    .label--next {
+        &,
+        & + span {
+            margin-left: 5%;
+            text-align: right;
+        }
+    }
+    .label--previous {
+        &,
+        & + span {
+            margin-right: 5%;
+        }
+    }    
+}

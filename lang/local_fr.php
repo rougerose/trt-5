@@ -45,7 +45,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
     // P
     'par' => "Par",
-
+    'pager_precedent_info' => "Article précédent",
+    'pager_suivant_info' => "Article suivant",
     // S
     'site_web' => "Site web"
 );
