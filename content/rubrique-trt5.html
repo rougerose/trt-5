@@ -20,6 +20,39 @@
             </div>
         </div><!-- /.row -->
 
+        [(#REM) A propos du TRT-5 ] #SET{articles_presentation,#ARRAY}
+        <BOUCLE_presentation_trt5(RUBRIQUES){id_secteur}{id_mot=63}{0,1}>
+            <BOUCLE_articles_presentation(ARTICLES){id_rubrique}{par num titre}>#SET{articles_presentation,#GET{articles_presentation}|push{#ID_ARTICLE}}</BOUCLE_articles_presentation>
+        <section class="carousel-presentation group">
+            <div class="row">
+                [(#REM) SOMMAIRE ]
+                <B_sommaire>
+                <div class="medium-3 column">
+                    <nav id="carouselNav" class="carousel-nav clearfix">
+                        <BOUCLE_sommaire(ARTICLES){id_article IN #GET{articles_presentation}}>
+                        <a href="#trt5-#COMPTEUR_BOUCLE" class="carousel-nav__item">#TITRE</a>
+                        </BOUCLE_sommaire>
+                    </nav>
+                </div><!-- /.column -->
+                </B_sommaire>
+
+                [(#REM) CONTENU ]
+                <B_contenu>
+                <div class="medium-9 column">
+                    <h1 class="carousel-titre section__titre">#TITRE</h1>
+                    <div id="carouselPresentation" class="owl-carousel carousel-contenu">
+                        <BOUCLE_contenu(ARTICLES){id_article IN #GET{articles_presentation}}>
+                        <div data-hash="trt5-#COMPTEUR_BOUCLE">
+                            <INCLURE{fond=inclure/presentation-article-complet,id_article} />
+                        </div>
+                        </BOUCLE_contenu>
+                    </div><!-- /.owl-carousel -->
+                </div><!-- /.column -->
+                </B_contenu>
+            </div><!-- /.row -->
+        </section><!-- /.group .carousel-presentation -->
+        </BOUCLE_presentation_trt5>
+
         <div class="row">
             [(#REM) Les sélections, si elles existent ]
             <B_selection_carousel>
