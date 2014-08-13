@@ -3082,6 +3082,7 @@ form ul {
 /* 
    #OFF-CANVAS
    ========================================================================== */
+.off-canvas-wrap.move-left,
 .inner-wrap {
   height: 100%; }
 
