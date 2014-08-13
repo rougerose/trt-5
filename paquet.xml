@@ -1,4 +1,4 @@
-<paquet categorie="squelette" compatibilite="[3.0.14;[" etat="dev" logo="img/trt5-128.png" prefix="trt5" version="2.0.0">
+<paquet categorie="squelette" compatibilite="[3.0.14;[" etat="dev" logo="img/trt5-128.png" prefix="trt5" version="0.0.1">
     <nom>TRT-5</nom>
     <auteur lien="http://rouge-rose.net">christophe le drean</auteur>
     <licence>MIT</licence>
