@@ -7,6 +7,7 @@
    ========================================================================== */
 // .resume-article {}
 .resume-article__title {
+    margin-bottom: 1.1em;
     font-size: rem-calc(18);
     font-weight: bold;
     a {
@@ -32,6 +33,7 @@
     font-family: $font-bold;
     font-size: rem-calc(20);
     text-transform: none;
+    border-bottom: 1px solid $couleur-1;
 }
 .resume-rubrique__desc {
     p {

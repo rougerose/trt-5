@@ -22,6 +22,19 @@ a {
     }
 }
 
+.suite {
+    font-style: italic;
+    em {
+        font-weight: bold;
+        @include transition(padding .3s ease-out);
+    }
+    &:hover {
+        em {
+            padding-left: 1em;
+        }
+    }
+}
+
 /* 
    #HEADINGS
    ========================================================================== */
