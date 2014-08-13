@@ -3,9 +3,12 @@
 //
 // lib
 // ========================================================================== 
-@import "bourbon";
+
 @import "normalize";
 @import "scss/foundation";
+
+@import "scss/owl.trt5.theme",
+        "owl.animate","owl.autoheight","owl.carousel","owl.lazyload","owl.video";
 
 //$fa-font-path: "fonts/fontawesome";
 //@import "font-awesome";
@@ -14,7 +17,7 @@
 // TRT-5
 // ===================
 
-
+@import "bourbon";
 @import 
     "scss/mixin",
     "scss/settings",
@@ -27,6 +30,7 @@
 
     // layout
     "scss/layout/header",
+    "scss/layout/main",
     "scss/layout/nav",
     "scss/layout/footer",
 
@@ -41,7 +45,8 @@
     "scss/modules/medias",
     "scss/modules/documents",
     "scss/modules/resumes",
-    "scss/modules/orbit",
+    "scss/modules/carousel",
+    //"scss/modules/orbit",
     "scss/modules/pagination",
 
     // pages

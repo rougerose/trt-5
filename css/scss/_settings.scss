@@ -6,10 +6,13 @@
 // #COULEURS
 // ==========================================================================
  
-$color-1: #d52b1e;  // rouge
-$color-2: #adafaf;  // gris
-$color-3: #ff6400; // #f5a623; // orange
-$black: #000;     // noir
+$color-1:   #d52b1e;  // rouge
+$couleur-1: #d52b1e;
+$color-2:   #adafaf;  // gris
+$couleur-2: #adafaf;
+$color-3:   #ff6400; // #f5a623; // orange
+$couleur-3: #ff6400;
+$black:     #000;     // noir
 
 $success-color: #22a207;
 
@@ -18,9 +21,12 @@ $success-color: #22a207;
 $color-link: $color-1;
 $color-link-hover: #000;
 
+$font-helvetica: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$font-georgia: Georgia, Cambria, "Times New Roman", Times, serif;
 //
 // #FONT
-$serif: 'PT Serif', $georgia;
+$serif: 'PT Serif', $font-georgia;
 $font-base: $serif;
-$font-reg: "Dinreg", $helvetica;
-$font-bold: "Dinbold", $helvetica;
+$font-reg: "dinreg", $font-helvetica;
+$font-bold: "dinbold", $font-helvetica;
+$font-light: "dinlight", $font-helvetica;

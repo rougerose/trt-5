@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 
     sass: {
       options: {
-        loadPath: [require('node-bourbon').includePaths,'bower_components/foundation/scss','bower_components/fontawesome/scss']
+        loadPath: [require('node-bourbon').includePaths,'bower_components/foundation/scss','bower_components/owl-carousel2/src/scss/']
       },
       dist: {
         options: {
@@ -28,7 +28,8 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'js/foundation/foundation.min.js':'bower_components/foundation/js/foundation/foundation.js',
-          'js/foundation/foundation.offcanvas.min.js':'bower_components/foundation/js/foundation/foundation.offcanvas.js'
+          'js/foundation/foundation.offcanvas.min.js':'bower_components/foundation/js/foundation/foundation.offcanvas.js',
+          'js/owl.carousel/owl.carousel.min.js':'bower_components/owl-carousel2/dist/owl.carousel.min.js'
         }
       }
     },
@@ -44,6 +45,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   // grunt.registerTask('dist', ['sass:dist','concat:dev']);
   grunt.registerTask('compile', ['uglify:dist']);

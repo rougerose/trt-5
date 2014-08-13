@@ -6,7 +6,7 @@
    #OFF-CANVAS
    ========================================================================== */
 
-.off-canvas-wrap,
+//.off-canvas-wrap,
 .inner-wrap{
     height:100%;   
 }
@@ -80,11 +80,6 @@
         top: -3em;
         padding-right:0.9375rem;
     }
-    @media #{$medium-up} {
-        .site-nav-open {
-            top: 0;
-        }
-    }
     .right-off-canvas-toggle {
         font-family: $font-bold;
         text-transform: uppercase;
@@ -113,8 +108,8 @@
                 content: '';
                 @include transition(background .25s ease);
             }
-            &:before {@include translate2d(0,-200%);}
-            &:after {@include translate2d(0,200%);}
+            &:before {@include transform(translate(0,-200%));}
+            &:after {@include transform(translate(0,200%));}
         }
         &:hover{
             span {
@@ -124,5 +119,10 @@
                     background-color: #000;
                 }
             }
+        }
+    }
+    @media #{$medium-up} {
+        .site-nav-open {
+            top: 0;
         }
     }

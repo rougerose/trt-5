@@ -1,0 +1,60 @@
+/*  ==========================================================================
+    carousel
+    ========================================================================== */
+    
+    .carousel-presentation {
+        background-color: $couleur-1;
+        color: #fff;
+        padding: 1em 0;
+    }
+
+    .carousel-nav {
+        margin-top: 1em;
+        margin: 1em 0;
+        font-family: $font-reg;
+    }
+        .carousel-nav__item {
+            color: #000;
+            display: block;
+            margin-right: .5em;
+            &:before {
+                width: 14px; 
+                height: 14px;
+                position: relative;
+                top: 1px;
+                content: " ";
+                display: inline-block;
+                margin-right: .5em;
+                border: 1px solid #fff;
+                @include radius(100px);
+            }
+            &:hover,
+            &.active {
+                color: #fff;
+                &:before {
+                    background-color: #fff;
+                }
+            }
+        }
+        .owl-dots {
+            text-align: left;
+        }
+        .owl-dot {
+            &:hover,
+            &.active { span { border: 2px solid $couleur-1; } }
+            span { margin-left: 0 !important; }
+        }
+    .carousel-titre {
+        font-size: rem-calc(22);
+    }
+    .carousel-contenu {
+        .article__title {color:#fff;}
+    }
+
+/*  media-query
+    ========================================================================== */
+    
+    @media #{$medium-up} {
+        .carousel-nav {margin-top: 2em;}
+        .carousel-titre {font-size: rem-calc(28);}
+    }    

@@ -2,10 +2,13 @@
    #GROUP
    ========================================================================== */
 
+.group {
+    margin-bottom: 2em;
+}
 .group--majeur {
-  border-bottom: 2px solid $color-1;
+  // border-bottom: 2px solid $color-1;
   margin-bottom: 2em;
-  padding-bottom: 1em;
+  // padding-bottom: 1em;
 }
 .group--mineur {
     margin-bottom: 2em;

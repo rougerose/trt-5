@@ -10,3 +10,7 @@ Groupe Derniers articles : Tous les articles en sélection.
 # Pied de page
 Première colonne gauche : titre + descriptif de la rubrique TRT-5 (id 1)
 Deuxième colonne droite : dans la rubrique TRT-5 (id 1), on prend l'article publié avec le mot-clé Associations membres (id 5). On affiche son titre et c'est la liste des auteurs de cet article qui ont chacun également le mot-clé Assocations membres (id 5). 
+
+# Owl-carousel
+- Nécessite une version plus récente de Jquery. Version 1.9 installée.
+- La mise à jour Jquery provoque des erreurs avec Colorbox. Plugin désactivé dans la partie publique. Si nécessité de ce script, il faudra en utiliser un autre à jour ou une version plus récente séparée.

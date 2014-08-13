@@ -9,6 +9,7 @@
   "private": true,
   "dependencies": {
     "fontawesome": "~4.0.3",
-    "foundation": "~5.3"
+    "foundation": "~5.3",
+    "owl-carousel2": "*"
   }
 }
