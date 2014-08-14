@@ -21,11 +21,11 @@ $(function() {
             items:1,
             center: true,
             dots: false,
-            URLhashListener:true,
-            autoplay: true,
-            autoplayTimeout: 6000,
-            autoplayHoverPause: true,
-            themeClass: 'owl-trt5'
+            URLhashListener:true
+            //autoplay: true,
+            //autoplayTimeout: 6000,
+            //autoplayHoverPause: true,
+            //themeClass: 'owl-trt5'
         }).on('changed.owl.carousel',function(e){
             if (!e.namespace) return;
             var actif = e.relatedTarget.current();
