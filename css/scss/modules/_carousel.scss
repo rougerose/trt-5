@@ -35,14 +35,6 @@
                 }
             }
         }
-        .owl-dots {
-            text-align: left;
-        }
-        .owl-dot {
-            &:hover,
-            &.active { span { border: 2px solid $couleur-1; } }
-            span { margin-left: 0 !important; }
-        }
     .carousel-titre {
         font-size: rem-calc(22);
     }

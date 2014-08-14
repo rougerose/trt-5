@@ -7,9 +7,9 @@
     <div class="medium-6 column resume-membres">
         <BOUCLE_article_asso_membres(ARTICLES){id_secteur}{id_mot=5}{0,1}>
         <h1 class="hN resume-membres__title">#TITRE</h1>
-        <ul class="bare-list">
+        <ul class="small-block-grid-2">
             <BOUCLE_asso_membres(AUTEURS){id_article}{id_mot=5}{par nom}>
-            <li class="list__item">
+            <li class="">
                 <a href="#URL_ARTICLE">#NOM</a>
             </li>
             </BOUCLE_asso_membres>

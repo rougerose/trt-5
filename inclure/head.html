@@ -11,8 +11,6 @@
 [(#REM) Lien vers le flux RSS du site ]
 [<link rel="alternate" type="application/rss+xml" title="<:syndiquer_site:>" href="(#URL_PAGE{backend})" />]
 
-
-
 [(#REM) Balise permettant aux plugins d'inserer des fichiers CSS ]
 #INSERT_HEAD_CSS
 
@@ -30,6 +28,7 @@
 
 [(#REM) css et js du plugin ]
 <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+[<link rel="stylesheet" href="(#CSS{js/owl/owl-carousel/owl.carousel.css})" type="text/css" />]
+[<link rel="stylesheet" href="(#CSS{js/owl/owl-carousel/owl.theme.css})" type="text/css" />]
 [<link rel="stylesheet" href="(#CSS{css/styles.css})" type="text/css" />]
-
 [<script src="(#CHEMIN{js/modernizr/modernizr.min.js})"></script>]

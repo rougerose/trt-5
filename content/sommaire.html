@@ -61,7 +61,7 @@
                 <h1 class="carousel-titre section__titre">#TITRE</h1>
                 <div id="carouselPresentation" class="owl-carousel carousel-contenu">
                     <BOUCLE_contenu(ARTICLES){id_article IN #GET{articles_presentation}}>
-                    <div data-hash="trt5-#COMPTEUR_BOUCLE">
+                    <div id="trt5-#COMPTEUR_BOUCLE">
                         <INCLURE{fond=inclure/presentation-article-complet,id_article} />
                     </div>
                     </BOUCLE_contenu>
