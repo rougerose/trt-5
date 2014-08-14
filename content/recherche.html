@@ -19,7 +19,6 @@
                 <h1 class="hN"><span class="titre"><:resultats_recherche:></span></h1>
             </div>
         </header>
-        [(#GET{total}|>{0}|oui)
         <div class="self__body medium-9 medium-offset-3 column">
             [(#GET{total}|>{0}|?{
             [<p class="resultats--total info">(#GET{total}|singulier_ou_pluriel{local:info_recherche_resultat,local:info_recherche_resultats,nb})</p>],
@@ -35,7 +34,7 @@
             ][(#GET{mots}|count|>{0}|oui)
                 [(#INCLURE{fond=liste/recherche-mots,selection=#GET{mots},env,ajax})]
             ]
-        </div>]
+        </div>
     </article>
 
     [(#REM) Fil d'Ariane ]
