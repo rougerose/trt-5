@@ -25,15 +25,24 @@
 .self__title {
     .hN {
         font-size: rem-calc(28);
-        line-height: 1.1;
+        line-height: 1.2;
         color: #000;
     }
-    .self-article & .hN {
-        font-style: italic;
-    }
+    .self-article & .titre  {}
     .soustitre {
         display: block;
+        margin-top: 1em;
+        font-size: rem-calc(15);
         line-height: inherit;
+        font-style: italic;
+        color: $couleur-2;
+    }
+    .surtitre {
+        border-bottom: 1px dotted $couleur-texte;
+        font-size: rem-calc(15);
+        line-height: 1.4;
+        font-style:italic;
+        text-align: center;
     }
 }
 
@@ -49,7 +58,7 @@
         }
     }
     section {
-        margin-bottom: 4em;
+        margin-bottom: 3em;
     }
     .ps {
         padding: 1em 1em .5em;
@@ -86,6 +95,12 @@
     .self__title {
         .hN {
             font-size: rem-calc(32);
+        }
+        .soustitre {
+            font-size: rem-calc(18);
+        }
+        .surtitre {
+            font-size: rem-calc(18);
         }
     }
     .self__body {

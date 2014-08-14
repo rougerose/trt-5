@@ -2,7 +2,9 @@
    .pager
    ========================================================================== */
 
-// .pager {}
+.pager {
+    margin-bottom: 3em;
+}
 .pager__item {}
 .pager__item-child {display: block;}
 .pager-label {

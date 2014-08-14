@@ -7,7 +7,6 @@
         color: #fff;
         padding: 1em 0;
     }
-
     .carousel-nav {
         margin-top: 1em;
         margin: 1em 0;
@@ -53,7 +52,11 @@
 
 /*  media-query
     ========================================================================== */
-    
+    @media #{$small-only} {
+        .carousel-actus {
+            margin-bottom: 3em;
+        }
+    }
     @media #{$medium-up} {
         .carousel-nav {margin-top: 2em;}
         .carousel-titre {font-size: rem-calc(28);}

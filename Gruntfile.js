@@ -17,7 +17,7 @@ module.exports = function(grunt) {
       dev: {
         options: {
           style: 'nested',
-          quiet: true
+          lineNumbers: true
         },
         files: {
           'css/styles.css': 'css/styles.scss'
