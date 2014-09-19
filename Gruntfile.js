@@ -4,14 +4,14 @@ module.exports = function(grunt) {
 
     sass: {
       options: {
-        loadPath: [require('node-bourbon').includePaths,'bower_components/foundation/scss','bower_components/owl-carousel2/src/scss/']
+        loadPath: [require('node-bourbon').includePaths,'bower_components/foundation/scss']
       },
       dist: {
         options: {
           style: 'compressed'
         },
         files: {
-          'css/styles.css': 'css/styles.scss'
+          'css/styles.css': 'css/scss/styles.scss'
         }        
       },
       dev: {
@@ -20,7 +20,7 @@ module.exports = function(grunt) {
           lineNumbers: true
         },
         files: {
-          'css/styles.css': 'css/styles.scss'
+          'css/styles.css': 'css/scss/styles.scss'
         }
       }
     },

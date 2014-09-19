@@ -22,8 +22,10 @@ $(function() {
     }
 
     // Carousel actualités
-    $("#carouselActus,#carouselPresentation").owlCarousel({
-        items:1
+    $("#carouselActus").owlCarousel({
+        items:1,
+        autoPlay: true,
+        stopOnHover: true
     });
 
     // Foundation : offcanvas
