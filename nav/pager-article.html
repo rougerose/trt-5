@@ -1,7 +1,7 @@
 <BOUCLE_pager(ARTICLES){id_article}>
 <nav class="pager">
     <ul class="bare-list">
-        <BOUCLE_article_precedent(ARTICLES){id_rubrique}{par date}{precedent}>
+        <BOUCLE_article_precedent(ARTICLES){id_rubrique}{!par date}{precedent}>
         <li class="pager__item">
             <a href="#URL_ARTICLE" title="[(#TITRE|attribut_html)]">
                 <span class="pager__item-child pager-label label--previous"><:local:pager_precedent_info:></span>
@@ -15,7 +15,7 @@
             </span>
         </li>
         <//B_article_precedent>
-        <BOUCLE_article_suivant(ARTICLES){id_rubrique}{par date}{suivant}>
+        <BOUCLE_article_suivant(ARTICLES){id_rubrique}{!par date}{suivant}>
         <li class="pager__item">
             <a href="#URL_ARTICLE" title="[(#TITRE|attribut_html)]">
                 <span class="pager__item-child pager-label label--next"><:local:pager_suivant_info:></span>
