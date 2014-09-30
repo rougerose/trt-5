@@ -10,7 +10,7 @@ $(function() {
         var presentation = $("#carouselPresentation"), nav = $("#carouselNav > a");
         nav.eq(0).addClass("active");
         presentation.owlCarousel({
-            items:1,
+            singleItem:true,
             pagination: false
         });
         nav.on("click",function(e){
@@ -23,7 +23,7 @@ $(function() {
 
     // Carousel actualités
     $("#carouselActus").owlCarousel({
-        items:1,
+        singleItem:true,
         autoPlay: true,
         stopOnHover: true
     });
