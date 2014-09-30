@@ -36,10 +36,11 @@
             [(#REM) Gestion du portfolio et des documents ]
             [(#INCLURE{fond=inclure/documents,id_article})]
 
-            [(#PAGE|=={contact}|oui)]
+            [(#PAGE|=={contact}|oui)
             [<section class="texte surlignable self-article__texte ajax">
                 (#FORMULAIRE_ECRIRE_AUTEUR)
             </section>]
+            ]
             
         </div>
         <div class="medium-3 column left">
