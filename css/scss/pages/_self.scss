@@ -38,11 +38,13 @@
         color: $couleur-2;
     }
     .surtitre {
-        border-bottom: 1px dotted $couleur-texte;
+        // border-bottom: 1px dotted $couleur-texte;
+        margin-bottom: .5em;
         font-size: rem-calc(15);
         line-height: 1.4;
         font-style:italic;
-        text-align: center;
+        color: #000;
+        // text-align: center;
     }
 }
 

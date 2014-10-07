@@ -6,6 +6,6 @@
     <necessite compatibilite="[1.0.4;[" nom="socialtags"/>
     <necessite nom="mots_techniques" compatibilite="[1.0.0;[" />
     <necessite nom="compositions" compatibilite="[3.3.6;[" />
-    <!-- <utilise nom="IntertitresTdm" compatibilite="[2.7.45;[" /> -->
+    <utilise nom="IntertitresTdm" />
     <chemin path=""/>
 </paquet>
